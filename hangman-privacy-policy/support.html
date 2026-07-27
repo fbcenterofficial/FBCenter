@@ -301,11 +301,13 @@
       purchase receipt and account email.</p>
     </details>
 
-    <details>
+    <details id="delete-account">
       <summary>I want to delete my account and data</summary>
       <p>Go to Settings (or Profile) → Delete Account inside the app. This immediately removes
-      your account and all associated game data. If you're unable to access the app, email us
-      and we'll process the deletion manually.</p>
+      your account and all associated game data. If you're unable to access the app, email
+      <a href="mailto:fbcenterofficial@gmail.com?subject=Account%20deletion%20request">fbcenterofficial@gmail.com</a>
+      with the email address on your account and we'll process the deletion manually within a
+      few days.</p>
     </details>
   </section>
 
@@ -323,5 +325,14 @@
   </footer>
 
 </div>
+<script>
+  if (location.hash) {
+    var target = document.querySelector(location.hash);
+    if (target && target.tagName === 'DETAILS') {
+      target.open = true;
+      target.scrollIntoView({ block: 'center' });
+    }
+  }
+</script>
 </body>
 </html>
