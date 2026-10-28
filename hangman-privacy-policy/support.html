@@ -3,337 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HangMan — Support</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxQjMzNTgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMEUxRjM4Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSBCYWNrZ3JvdW5kIHRpbGUgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSI5NiIgZmlsbD0idXJsKCNiZykiLz4KCiAgPCEtLSBHYWxsb3dzLCBkb3VibGluZyBhcyBhIGNoYWxrICJIIiAtLT4KICA8ZyBzdHJva2U9IiNGMkVGRTYiIHN0cm9rZS13aWR0aD0iMjAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSI+CiAgICA8bGluZSB4MT0iMTYwIiB5MT0iMTIwIiB4Mj0iMTYwIiB5Mj0iMzYwIi8+CiAgICA8bGluZSB4MT0iMTYwIiB5MT0iMTYwIiB4Mj0iMzIwIiB5Mj0iMTYwIi8+CiAgICA8bGluZSB4MT0iMzIwIiB5MT0iMTYwIiB4Mj0iMzIwIiB5Mj0iMjIwIi8+CiAgPC9nPgoKICA8IS0tIEhhbmdpbmcgZmlndXJlOiBzaW5nbGUgYWNjZW50IGhlYWQgKyBib2R5LCBtaW5pbWFsIC0tPgogIDxjaXJjbGUgY3g9IjMyMCIgY3k9IjI0OCIgcj0iMjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0U4Qjg0QiIgc3Ryb2tlLXdpZHRoPSIxOCIvPgogIDxsaW5lIHgxPSIzMjAiIHkxPSIyNzQiIHgyPSIzMjAiIHkyPSIzMzAiIHN0cm9rZT0iI0U4Qjg0QiIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGxpbmUgeDE9IjMyMCIgeTE9IjI4OCIgeDI9IjI5OCIgeTI9IjMxMiIgc3Ryb2tlPSIjRThCODRCIiBzdHJva2Utd2lkdGg9IjE0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iMzIwIiB5MT0iMjg4IiB4Mj0iMzQyIiB5Mj0iMzEyIiBzdHJva2U9IiNFOEI4NEIiIHN0cm9rZS13aWR0aD0iMTQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgoKICA8IS0tIFdvcmQgYmxhbmtzOiB0aWVzIGdhbGxvd3MgdG8gImd1ZXNzIHRoZSB3b3JkIiBnYW1lcGxheSAtLT4KICA8ZyBzdHJva2U9IiNGMkVGRTYiIHN0cm9rZS13aWR0aD0iMTQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICA8bGluZSB4MT0iMTQwIiB5MT0iNDAwIiB4Mj0iMTgwIiB5Mj0iNDAwIi8+CiAgICA8bGluZSB4MT0iMjAwIiB5MT0iNDAwIiB4Mj0iMjQwIiB5Mj0iNDAwIi8+CiAgICA8bGluZSB4MT0iMjYwIiB5MT0iNDAwIiB4Mj0iMzAwIiB5Mj0iNDAwIi8+CiAgICA8bGluZSB4MT0iMzIwIiB5MT0iNDAwIiB4Mj0iMzYwIiB5Mj0iNDAwIi8+CiAgPC9nPgo8L3N2Zz4K">
+<title>Hangmania — Support</title>
+<meta name="description" content="Help and support for Hangmania, a word-guessing game by FB Center.">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
   :root {
-    --bg: #FFFFFF;
-    --bg-panel: #FFFFFF;
-    --ink: #16213A;
-    --ink-soft: #4A5578;
-    --rule: #E3E0D4;
-    --navy: #0B2C6B;
-    --navy-soft: #EEF1F8;
-    --gold: #9C7A20;
-    --gold-bg: #FBF3DE;
-    --focus: #0B2C6B;
-    --logo-blue: #1E4FD6;
+    --bg: #FFFFFF; --tint: #F3F6FF; --tint-2: #E8EEFF;
+    --ink: #10173A; --ink-soft: #55618C; --rule: #E1E7FA;
+    --navy: #1E2A5E; --blue: #3454D1; --blue-deep: #22379E;
+    --font-display: "Sora", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0B1220;
-      --bg-panel: #121B30;
-      --ink: #E7EAF4;
-      --ink-soft: #A7B0C8;
-      --rule: #263252;
-      --navy: #8FA8E8;
-      --navy-soft: #182347;
-      --gold: #E8C876;
-      --gold-bg: #241F0F;
-      --focus: #8FA8E8;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #0B1220;
-    --bg-panel: #121B30;
-    --ink: #E7EAF4;
-    --ink-soft: #A7B0C8;
-    --rule: #263252;
-    --navy: #8FA8E8;
-    --navy-soft: #182347;
-    --gold: #E8C876;
-    --gold-bg: #241F0F;
-    --focus: #8FA8E8;
-  }
-  :root[data-theme="light"] {
-    --bg: #FFFFFF;
-    --bg-panel: #FFFFFF;
-    --ink: #16213A;
-    --ink-soft: #4A5578;
-    --rule: #E3E0D4;
-    --navy: #0B2C6B;
-    --navy-soft: #EEF1F8;
-    --gold: #9C7A20;
-    --gold-bg: #FBF3DE;
-    --focus: #0B2C6B;
-  }
-
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body);
+         -webkit-font-smoothing: antialiased; line-height: 1.65; }
+  a { color: var(--blue); }
+  a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, "Charter", serif;
-    -webkit-font-smoothing: antialiased;
-  }
+  /* ---------- Header band ---------- */
+  .band { background: linear-gradient(180deg, var(--tint-2) 0%, var(--tint) 60%, var(--bg) 100%);
+          border-bottom: 1px solid var(--rule); }
+  .band-inner { max-width: 820px; margin: 0 auto; padding: 22px 24px 30px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+  .brand svg { width: 44px; height: 44px; flex: none; border-radius: 11px; box-shadow: 0 4px 14px rgba(30,42,94,.18); }
+  .brand b { font-family: var(--font-display); font-size: 19px; display: block; line-height: 1.15; }
+  .brand small { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-soft); letter-spacing: .04em; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 22px 0 26px; padding: 5px; background: #FFFFFF;
+          border: 1px solid var(--rule); border-radius: 999px; width: fit-content; max-width: 100%; }
+  .tabs a { text-decoration: none; color: var(--ink-soft); font-weight: 600; font-size: 14px;
+            padding: 8px 16px; border-radius: 999px; }
+  .tabs a:hover { color: var(--blue); }
+  .tabs a[aria-current="page"] { background: var(--blue); color: #FFFFFF; }
+  h1 { font-family: var(--font-display); font-size: clamp(30px, 5vw, 40px); line-height: 1.15;
+       letter-spacing: -0.02em; color: var(--navy); margin: 0 0 12px; }
+  .meta { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 12px;
+          font-weight: 600; color: var(--blue); background: #FFFFFF; border: 1px solid var(--rule);
+          border-radius: 999px; padding: 5px 12px; margin-bottom: 16px; }
+  .lede { font-size: 16.5px; color: var(--ink-soft); max-width: 62ch; margin: 0; }
 
-  .page {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 56px 24px 96px;
-  }
+  /* ---------- Body ---------- */
+  main { max-width: 820px; margin: 0 auto; padding: 34px 24px 72px; }
+  .card { border: 1px solid var(--rule); border-radius: 20px; padding: 22px 24px; background: #FFFFFF; }
+  .toc { margin-bottom: 36px; }
+  .toc h2 { font-family: var(--font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase;
+            color: var(--blue); margin: 0 0 12px; }
+  .toc ol { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 20px; }
+  .toc a { display: flex; gap: 10px; align-items: baseline; text-decoration: none; color: var(--ink); font-size: 14.5px; padding: 4px 0; }
+  .toc a:hover { color: var(--blue); }
+  .toc a span { font-family: var(--font-mono); font-size: 12px; color: var(--blue); min-width: 20px; }
+  @media (max-width: 600px) { .toc ol { grid-template-columns: 1fr; } }
 
-  .masthead {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 8px;
-  }
-  .crest {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    background: var(--logo-blue);
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Georgia, serif;
-    font-weight: 700;
-    font-size: 22px;
-    flex-shrink: 0;
-  }
-  .brand {
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-  }
-
-  h1 {
-    font-size: clamp(32px, 5vw, 44px);
-    line-height: 1.1;
-    margin: 20px 0 6px;
-    text-wrap: balance;
-    font-weight: 600;
-  }
-
-  .meta {
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-size: 13px;
-    color: var(--ink-soft);
-    margin-bottom: 32px;
-  }
-  .meta .pill {
-    display: inline-block;
-    background: var(--gold-bg);
-    color: var(--gold);
-    border-radius: 999px;
-    padding: 3px 10px;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    margin-right: 8px;
-  }
-
-  .lede {
-    font-size: 18px;
-    line-height: 1.6;
-    color: var(--ink-soft);
-    padding-bottom: 28px;
-    border-bottom: 1px solid var(--rule);
-    margin-bottom: 28px;
-    text-wrap: balance;
-  }
-
-  .contact-card {
-    background: var(--bg-panel);
-    border: 1px solid var(--rule);
-    border-radius: 14px;
-    padding: 22px 24px;
-    margin-bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-  .contact-card .label {
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    margin-bottom: 4px;
-  }
-  .contact-card .email {
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--ink);
-  }
-  .contact-card a.button {
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    background: var(--navy);
-    color: var(--bg-panel);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 15px;
-    padding: 12px 24px;
-    border-radius: 24px;
-    white-space: nowrap;
-  }
-
-  section {
-    margin-bottom: 36px;
-    scroll-margin-top: 20px;
-  }
-  section h2 {
-    font-size: 22px;
-    font-weight: 600;
-    margin: 0 0 4px;
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-  }
-  section h2 .num {
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--gold);
-    background: var(--gold-bg);
-    border-radius: 6px;
-    padding: 2px 7px;
-  }
-
-  section p, section li {
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-size: 15.5px;
-    line-height: 1.7;
-    color: var(--ink);
-    max-width: 65ch;
-  }
-  section p { margin: 10px 0; }
-  section ul { margin: 10px 0; padding-left: 1.2em; }
+  section { padding: 26px 0; border-top: 1px solid var(--rule); scroll-margin-top: 16px; }
+  section:first-of-type { border-top: 0; padding-top: 0; }
+  section h2 { display: flex; align-items: center; gap: 12px; font-family: var(--font-display);
+               font-size: 21px; color: var(--navy); margin: 0 0 12px; }
+  .num { width: 32px; height: 32px; border-radius: 10px; background: var(--tint-2); color: var(--blue);
+         font-family: var(--font-mono); font-size: 14px; font-weight: 600; display: grid; place-items: center; flex: none; }
+  section p, section li { color: var(--ink-soft); font-size: 15.5px; }
+  section p { margin: 0 0 12px; }
+  section ul { margin: 0 0 12px; padding-left: 20px; }
   section li { margin-bottom: 6px; }
+  strong { color: var(--ink); }
 
-  details {
-    background: var(--bg-panel);
-    border: 1px solid var(--rule);
-    border-radius: 12px;
-    padding: 14px 18px;
-    margin: 12px 0;
-  }
-  details summary {
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-size: 15.5px;
-    font-weight: 600;
-    cursor: pointer;
-    color: var(--ink);
-  }
-  details p {
-    margin-top: 10px;
-  }
+  .rows { border: 1px solid var(--rule); border-radius: 16px; overflow: hidden; margin: 6px 0 14px; }
+  .row { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 14px; padding: 12px 16px; border-top: 1px solid var(--rule); font-size: 15px; }
+  .row:first-child { border-top: 0; }
+  .row dt { font-weight: 600; color: var(--navy); margin: 0; }
+  .row dd { margin: 0; color: var(--ink-soft); }
+  .row.muted { background: var(--tint); }
+  @media (max-width: 520px) { .row { grid-template-columns: 1fr; gap: 2px; } }
 
-  a { color: var(--navy); }
-  a:focus-visible, button:focus-visible {
-    outline: 2px solid var(--focus);
-    outline-offset: 2px;
-  }
+  .note { background: var(--tint); border: 1px solid var(--tint-2); border-left: 4px solid var(--blue);
+          border-radius: 12px; padding: 12px 16px; color: var(--ink); font-size: 15px; margin: 6px 0 14px; }
 
-  footer {
-    margin-top: 48px;
-    padding-top: 24px;
-    border-top: 1px solid var(--rule);
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    font-size: 13px;
-    color: var(--ink-soft);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
+  .contact-card { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+                  background: linear-gradient(135deg, var(--navy), var(--blue)); color: #FFFFFF; border-radius: 22px;
+                  padding: 26px 28px; margin: 4px 0 34px; }
+  .contact-card .label { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; opacity: .8; }
+  .contact-card .email { font-family: var(--font-mono); font-size: 17px; font-weight: 600; word-break: break-all; }
+  .btn { display: inline-flex; align-items: center; background: #FFFFFF; color: var(--navy); text-decoration: none;
+         font-weight: 700; font-size: 15px; padding: 12px 24px; border-radius: 999px; }
+  .btn:hover { background: var(--tint-2); }
+  @media (max-width: 520px) { .contact-card .btn { width: 100%; justify-content: center; } }
 
-  @media (max-width: 520px) {
-    .contact-card { flex-direction: column; align-items: flex-start; }
-    .contact-card a.button { width: 100%; text-align: center; }
-  }
+  .faq { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
+  details { border: 1px solid var(--rule); border-radius: 16px; padding: 14px 18px; background: #FFFFFF; }
+  details[open] { border-color: var(--tint-2); background: var(--tint); }
+  summary { cursor: pointer; font-weight: 600; color: var(--navy); list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--blue); font-family: var(--font-mono); font-size: 18px; line-height: 1; }
+  details[open] summary::after { content: "–"; }
+  details p { margin: 10px 0 0; color: var(--ink-soft); font-size: 15px; }
+
+  footer { border-top: 1px solid var(--rule); }
+  .foot { max-width: 820px; margin: 0 auto; padding: 22px 24px 40px; display: flex; flex-wrap: wrap; gap: 10px 22px;
+          justify-content: space-between; font-size: 13.5px; color: var(--ink-soft); }
+  .foot nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .foot a { color: var(--ink-soft); text-decoration: none; }
+  .foot a:hover { color: var(--blue); }
+  @media (max-width: 560px) { .band-inner, main, .foot { padding-left: 16px; padding-right: 16px; } }
 </style>
 </head>
 <body>
 
-<div class="page">
-
-  <div class="masthead">
-    <div class="crest">H</div>
-    <div class="brand">HangMan · by FBCenter</div>
+<header class="band">
+  <div class="band-inner">
+    <a class="brand" href="/"><svg viewBox="0 0 512 512" aria-hidden="true"><defs><linearGradient id="hm" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1B3358"/><stop offset="100%" stop-color="#0E1F38"/></linearGradient></defs><rect width="512" height="512" rx="110" fill="url(#hm)"/><g stroke="#F2EFE6" stroke-width="20" stroke-linecap="round" fill="none"><line x1="160" y1="120" x2="160" y2="360"/><line x1="160" y1="160" x2="320" y2="160"/><line x1="320" y1="160" x2="320" y2="220"/></g><circle cx="320" cy="248" r="26" fill="none" stroke="#E8B84B" stroke-width="18"/><line x1="320" y1="274" x2="320" y2="330" stroke="#E8B84B" stroke-width="18" stroke-linecap="round"/><line x1="320" y1="288" x2="298" y2="312" stroke="#E8B84B" stroke-width="14" stroke-linecap="round"/><line x1="320" y1="288" x2="342" y2="312" stroke="#E8B84B" stroke-width="14" stroke-linecap="round"/><g stroke="#F2EFE6" stroke-width="14" stroke-linecap="round"><line x1="140" y1="400" x2="180" y2="400"/><line x1="200" y1="400" x2="240" y2="400"/><line x1="260" y1="400" x2="300" y2="400"/><line x1="320" y1="400" x2="360" y2="400"/></g></svg><span><b>Hangmania</b><small>by FB Center</small></span></a>
+    <nav class="tabs" aria-label="Hangmania pages"><a href="/hangman-privacy-policy/">Privacy</a><a href="/hangman-privacy-policy/terms-of-service.html">Terms</a><a href="/hangman-privacy-policy/support.html" aria-current="page">Support</a></nav>
+    <h1>Support</h1>
+    <div class="meta">We usually reply within a day or two</div>
+    <p class="lede">Questions, bugs, or feedback about Hangmania? Running into a problem, have a suggestion, or need help with your account? Reach out below — we read every message.</p>
   </div>
+</header>
 
-  <h1>Support</h1>
-  <div class="meta"><span class="pill">We usually reply within a day or two</span>Questions, bugs, or feedback about the HangMan mobile app.</div>
-
-  <div class="lede">
-    Running into a problem, have a suggestion, or need help with your account? Reach out below —
-    we read every message.
-  </div>
-
-  <div class="contact-card">
-    <div>
-      <div class="label">Email us</div>
-      <div class="email">fbcenterofficial@gmail.com</div>
-    </div>
-    <a class="button" href="mailto:fbcenterofficial@gmail.com?subject=HangMan%20App%20-%20Support">Send an Email</a>
-  </div>
-
-  <section id="common-issues">
-    <h2><span class="num">1</span>Common issues</h2>
-
-    <details>
-      <summary>I didn't receive a verification code or password reset email</summary>
-      <p>Check your spam/junk folder first. Make sure you're checking the most recent email if
-      you requested more than one — only the latest code or link stays valid, and requesting
-      a new one invalidates the previous one.</p>
-    </details>
-
-    <details>
-      <summary>The code I received doesn't match what the app is asking for</summary>
-      <p>Enter exactly the digits shown in the email, with no spaces. If it still says the code
-      is incorrect, request a new one — codes expire after a short time.</p>
-    </details>
-
-    <details>
-      <summary>I bought Premium but it's not showing in the app</summary>
-      <p>Make sure you're logged into the same account you purchased with, then try the "Restore
-      Purchases" button on the Premium page. If it still doesn't appear, email us with your
-      purchase receipt and account email.</p>
-    </details>
-
-    <details id="delete-account">
-      <summary>I want to delete my account and data</summary>
-      <p>Go to Settings (or Profile) → Delete Account inside the app. This immediately removes
-      your account and all associated game data. If you're unable to access the app, email
-      <a href="mailto:fbcenterofficial@gmail.com?subject=Account%20deletion%20request">fbcenterofficial@gmail.com</a>
-      with the email address on your account and we'll process the deletion manually within a
-      few days.</p>
-    </details>
-  </section>
-
-  <section id="other-links">
-    <h2><span class="num">2</span>Other links</h2>
-    <p>
-      <a href="./index.html">Privacy Policy</a> &nbsp;·&nbsp;
-      <a href="./terms-of-service.html">Terms of Service</a>
-    </p>
-  </section>
-
-  <footer>
-    <span>HangMan — Word Guess Game</span>
-    <span>fbcenterofficial@gmail.com</span>
-  </footer>
-
+<main>
+<div class="contact-card">
+  <div><div class="label">Email us</div><div class="email">fbcenterofficial@gmail.com</div></div>
+  <a class="btn" href="mailto:fbcenterofficial@gmail.com?subject=Hangmania%20support">Send an Email</a>
 </div>
-<script>
-  if (location.hash) {
-    var target = document.querySelector(location.hash);
-    if (target && target.tagName === 'DETAILS') {
-      target.open = true;
-      target.scrollIntoView({ block: 'center' });
-    }
-  }
-</script>
+<section id="common"><h2><span class="num">1</span>Common issues</h2><div class="faq"><details><summary>I didn't receive a verification code or password reset email</summary><p>Check your spam/junk folder first. Make sure you're checking the most recent email if you requested more than one — only the latest code or link stays valid, and requesting a new one invalidates the previous one.</p></details><details><summary>The code I received doesn't match what the app is asking for</summary><p>Enter exactly the digits shown in the email, with no spaces. If it still says the code is incorrect, request a new one — codes expire after a short time.</p></details><details><summary>The password reset link doesn't open the app</summary><p>Open the link on the phone where Hangmania is installed, then tap "Open Hangmania" on the page that appears. If the page says the link has expired, request a new one from the app.</p></details><details><summary>I bought Premium but it's not showing in the app</summary><p>Make sure you're logged into the same account you purchased with, then try the "Restore Purchases" button on the Premium page. If it still doesn't appear, email us with your purchase receipt and account email.</p></details><details><summary>I'm not getting notifications</summary><p>Check that notifications are allowed for Hangmania in your phone's Settings → Notifications, and that Focus / Do Not Disturb is off. After reinstalling the app, your phone asks for permission again. Notifications only arrive while you're logged in.</p></details><details><summary>How do I change my ad privacy choices?</summary><p>In the EU, UK and Switzerland, open Settings → Ad privacy inside the app. On iPhone you can also change tracking permission in your phone's Settings → Privacy & Security → Tracking. Premium removes ads completely.</p></details><details><summary>I want to delete my account and data</summary><p>Go to Settings (or Profile) → Delete Account inside the app. This immediately removes your account and all associated game data. If you're unable to access the app, email <a href="mailto:fbcenterofficial@gmail.com">fbcenterofficial@gmail.com</a> with the email address on your account and we'll process the deletion manually within a few days. Deleting your account doesn't cancel a subscription — cancel it through Apple or Google.</p></details></div></section>
+<section id="links"><h2><span class="num">2</span>Other links</h2><p><a href="/hangman-privacy-policy/">Privacy Policy</a> · <a href="/hangman-privacy-policy/terms-of-service.html">Terms of Service</a> · <a href="/">FB Center</a></p></section>
+</main>
+
+<footer>
+  <div class="foot">
+    <span>Hangmania — a word game by <a href="/">FB Center</a></span>
+    <nav>
+      <a href="/hangman-privacy-policy/">Privacy Policy</a>
+      <a href="/hangman-privacy-policy/terms-of-service.html">Terms of Service</a>
+      <a href="/hangman-privacy-policy/support.html">Support</a>
+      <a href="mailto:fbcenterofficial@gmail.com">fbcenterofficial@gmail.com</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
