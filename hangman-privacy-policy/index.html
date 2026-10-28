@@ -5,9 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hangmania — Privacy Policy</title>
 <meta name="description" content="Privacy Policy for Hangmania, a word-guessing game by FB Center.">
+<link rel="canonical" href="https://fb-center.com/hangman-privacy-policy/">
+<link rel="alternate" hreflang="en" href="https://fb-center.com/hangman-privacy-policy/">
+<link rel="alternate" hreflang="ro" href="https://fb-center.com/ro/hangman-privacy-policy/">
+<link rel="alternate" hreflang="fr" href="https://fb-center.com/fr/hangman-privacy-policy/">
+<link rel="alternate" hreflang="es" href="https://fb-center.com/es/hangman-privacy-policy/">
+<link rel="alternate" hreflang="de" href="https://fb-center.com/de/hangman-privacy-policy/">
+<link rel="alternate" hreflang="it" href="https://fb-center.com/it/hangman-privacy-policy/">
+<link rel="alternate" hreflang="pt" href="https://fb-center.com/pt/hangman-privacy-policy/">
+<link rel="alternate" hreflang="x-default" href="https://fb-center.com/hangman-privacy-policy/">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<script>
+  (function () {
+    var langs = ["ro", "fr", "es", "de", "it", "pt"], saved = null;
+    try { saved = localStorage.getItem("fbc-lang"); } catch (e) {}
+    if (saved) return;
+    var prefs = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < prefs.length; i++) {
+      var l = (prefs[i] || "").slice(0, 2).toLowerCase();
+      if (l === "en") return;
+      if (langs.indexOf(l) !== -1) { location.replace("/" + l + "/hangman-privacy-policy/"); return; }
+    }
+  })();
+</script>
 <style>
   :root {
     --bg: #FFFFFF; --tint: #F3F6FF; --tint-2: #E8EEFF;
@@ -32,6 +54,8 @@
   .brand svg { width: 44px; height: 44px; flex: none; border-radius: 11px; box-shadow: 0 4px 14px rgba(30,42,94,.18); }
   .brand b { font-family: var(--font-display); font-size: 19px; display: block; line-height: 1.15; }
   .brand small { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-soft); letter-spacing: .04em; }
+  .topline { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .translation { font-size: 13px; color: var(--ink-soft); margin: 14px 0 0; }
   .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 22px 0 26px; padding: 5px; background: #FFFFFF;
           border: 1px solid var(--rule); border-radius: 999px; width: fit-content; max-width: 100%; }
   .tabs a { text-decoration: none; color: var(--ink-soft); font-weight: 600; font-size: 14px;
@@ -91,13 +115,13 @@
   @media (max-width: 520px) { .contact-card .btn { width: 100%; justify-content: center; } }
 
   .faq { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
-  details { border: 1px solid var(--rule); border-radius: 16px; padding: 14px 18px; background: #FFFFFF; }
-  details[open] { border-color: var(--tint-2); background: var(--tint); }
-  summary { cursor: pointer; font-weight: 600; color: var(--navy); list-style: none; display: flex; justify-content: space-between; gap: 12px; }
-  summary::-webkit-details-marker { display: none; }
-  summary::after { content: "+"; color: var(--blue); font-family: var(--font-mono); font-size: 18px; line-height: 1; }
-  details[open] summary::after { content: "–"; }
-  details p { margin: 10px 0 0; color: var(--ink-soft); font-size: 15px; }
+  .faq details { border: 1px solid var(--rule); border-radius: 16px; padding: 14px 18px; background: #FFFFFF; }
+  .faq details[open] { border-color: var(--tint-2); background: var(--tint); }
+  .faq summary { cursor: pointer; font-weight: 600; color: var(--navy); list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; color: var(--blue); font-family: var(--font-mono); font-size: 18px; line-height: 1; }
+  .faq details[open] summary::after { content: "–"; }
+  .faq details p { margin: 10px 0 0; color: var(--ink-soft); font-size: 15px; }
 
   footer { border-top: 1px solid var(--rule); }
   .foot { max-width: 820px; margin: 0 auto; padding: 22px 24px 40px; display: flex; flex-wrap: wrap; gap: 10px 22px;
@@ -106,22 +130,45 @@
   .foot a { color: var(--ink-soft); text-decoration: none; }
   .foot a:hover { color: var(--blue); }
   @media (max-width: 560px) { .band-inner, main, .foot { padding-left: 16px; padding-right: 16px; } }
+
+  .lang-menu { position: relative; }
+  .lang-menu summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-size: 14px; font-weight: 600; color: var(--ink);
+    background: #FFFFFF; border: 1px solid var(--rule); border-radius: 999px; padding: 8px 14px;
+    box-shadow: 0 2px 8px rgba(30,42,94,.06); user-select: none; }
+  .lang-menu summary::-webkit-details-marker { display: none; }
+  .lang-menu summary:hover { border-color: #C9D4F5; }
+  .lang-menu summary svg { width: 16px; height: 16px; color: var(--blue); }
+  .lang-menu .chev { width: 12px; height: 12px; transition: transform .15s ease; color: var(--ink-soft); }
+  .lang-menu[open] .chev { transform: rotate(180deg); }
+  .lang-menu ul { position: absolute; right: 0; top: calc(100% + 8px); z-index: 20; list-style: none; margin: 0;
+    padding: 6px; min-width: 190px; background: #FFFFFF; border: 1px solid var(--rule); border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(30,42,94,.16); }
+  .lang-menu li a { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 10px;
+    text-decoration: none; color: var(--ink); font-size: 14.5px; }
+  .lang-menu li a:hover { background: #F3F6FF; color: var(--blue); }
+  .lang-menu li a[aria-current="page"] { background: #E8EEFF; color: var(--blue); font-weight: 600; }
+  .lang-menu li a[aria-current="page"]::after { content: "✓"; margin-left: auto; }
 </style>
 </head>
 <body>
 
 <header class="band">
   <div class="band-inner">
-    <a class="brand" href="/"><svg viewBox="0 0 512 512" aria-hidden="true"><defs><linearGradient id="hm" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1B3358"/><stop offset="100%" stop-color="#0E1F38"/></linearGradient></defs><rect width="512" height="512" rx="110" fill="url(#hm)"/><g stroke="#F2EFE6" stroke-width="20" stroke-linecap="round" fill="none"><line x1="160" y1="120" x2="160" y2="360"/><line x1="160" y1="160" x2="320" y2="160"/><line x1="320" y1="160" x2="320" y2="220"/></g><circle cx="320" cy="248" r="26" fill="none" stroke="#E8B84B" stroke-width="18"/><line x1="320" y1="274" x2="320" y2="330" stroke="#E8B84B" stroke-width="18" stroke-linecap="round"/><line x1="320" y1="288" x2="298" y2="312" stroke="#E8B84B" stroke-width="14" stroke-linecap="round"/><line x1="320" y1="288" x2="342" y2="312" stroke="#E8B84B" stroke-width="14" stroke-linecap="round"/><g stroke="#F2EFE6" stroke-width="14" stroke-linecap="round"><line x1="140" y1="400" x2="180" y2="400"/><line x1="200" y1="400" x2="240" y2="400"/><line x1="260" y1="400" x2="300" y2="400"/><line x1="320" y1="400" x2="360" y2="400"/></g></svg><span><b>Hangmania</b><small>by FB Center</small></span></a>
-    <nav class="tabs" aria-label="Hangmania pages"><a href="/hangman-privacy-policy/" aria-current="page">Privacy</a><a href="/hangman-privacy-policy/terms-of-service.html">Terms</a><a href="/hangman-privacy-policy/support.html">Support</a></nav>
+    <div class="topline">
+      <a class="brand" href="/"><svg viewBox="0 0 512 512" aria-hidden="true"><defs><linearGradient id="hm" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1B3358"/><stop offset="100%" stop-color="#0E1F38"/></linearGradient></defs><rect width="512" height="512" rx="110" fill="url(#hm)"/><g stroke="#F2EFE6" stroke-width="20" stroke-linecap="round" fill="none"><line x1="160" y1="120" x2="160" y2="360"/><line x1="160" y1="160" x2="320" y2="160"/><line x1="320" y1="160" x2="320" y2="220"/></g><circle cx="320" cy="248" r="26" fill="none" stroke="#E8B84B" stroke-width="18"/><line x1="320" y1="274" x2="320" y2="330" stroke="#E8B84B" stroke-width="18" stroke-linecap="round"/><line x1="320" y1="288" x2="298" y2="312" stroke="#E8B84B" stroke-width="14" stroke-linecap="round"/><line x1="320" y1="288" x2="342" y2="312" stroke="#E8B84B" stroke-width="14" stroke-linecap="round"/><g stroke="#F2EFE6" stroke-width="14" stroke-linecap="round"><line x1="140" y1="400" x2="180" y2="400"/><line x1="200" y1="400" x2="240" y2="400"/><line x1="260" y1="400" x2="300" y2="400"/><line x1="320" y1="400" x2="360" y2="400"/></g></svg><span><b>Hangmania</b><small>by FB Center</small></span></a>
+      <details class="lang-menu"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20z"/></svg><span>English</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><ul><li><a href="/hangman-privacy-policy/" hreflang="en" lang="en" aria-current="page"><span aria-hidden="true">🇬🇧</span>English</a></li><li><a href="/ro/hangman-privacy-policy/" hreflang="ro" lang="ro"><span aria-hidden="true">🇷🇴</span>Română</a></li><li><a href="/fr/hangman-privacy-policy/" hreflang="fr" lang="fr"><span aria-hidden="true">🇫🇷</span>Français</a></li><li><a href="/es/hangman-privacy-policy/" hreflang="es" lang="es"><span aria-hidden="true">🇪🇸</span>Español</a></li><li><a href="/de/hangman-privacy-policy/" hreflang="de" lang="de"><span aria-hidden="true">🇩🇪</span>Deutsch</a></li><li><a href="/it/hangman-privacy-policy/" hreflang="it" lang="it"><span aria-hidden="true">🇮🇹</span>Italiano</a></li><li><a href="/pt/hangman-privacy-policy/" hreflang="pt" lang="pt"><span aria-hidden="true">🇵🇹</span>Português</a></li></ul></details>
+    </div>
+    <nav class="tabs" aria-label="Hangmania"><a href="/hangman-privacy-policy/" aria-current="page">Privacy</a><a href="/hangman-privacy-policy/terms-of-service.html">Terms</a><a href="/hangman-privacy-policy/support.html">Support</a></nav>
     <h1>Privacy Policy</h1>
     <div class="meta">Effective October 28, 2026</div>
     <p class="lede">Applies to the Hangmania mobile app on iOS and Android. This page explains, in plain terms, what information the app collects, why, and how you can remove it — because a privacy policy you can't actually read isn't much of one.</p>
+    
   </div>
 </header>
 
 <main>
-<nav class="card toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#collect"><span>1</span>Information we collect</a></li><li><a href="#use"><span>2</span>How we use it</a></li><li><a href="#ads"><span>3</span>Advertising & consent</a></li><li><a href="#third-parties"><span>4</span>Third-party services</a></li><li><a href="#retention"><span>5</span>Retention & deletion</a></li><li><a href="#security"><span>6</span>Security</a></li><li><a href="#children"><span>7</span>Children's privacy</a></li><li><a href="#rights"><span>8</span>Your rights</a></li><li><a href="#changes"><span>9</span>Changes to this policy</a></li><li><a href="#contact"><span>10</span>Contact</a></li></ol></nav><section id="collect"><h2><span class="num">1</span>Information we collect</h2>
+<nav class="card toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#collect"><span>1</span>Information we collect</a></li><li><a href="#use"><span>2</span>How we use it</a></li><li><a href="#ads"><span>3</span>Advertising &amp; consent</a></li><li><a href="#third-parties"><span>4</span>Third-party services</a></li><li><a href="#retention"><span>5</span>Retention &amp; deletion</a></li><li><a href="#security"><span>6</span>Security</a></li><li><a href="#children"><span>7</span>Children's privacy</a></li><li><a href="#rights"><span>8</span>Your rights</a></li><li><a href="#changes"><span>9</span>Changes to this policy</a></li><li><a href="#contact"><span>10</span>Contact</a></li></ol></nav><section id="collect"><h2><span class="num">1</span>Information we collect</h2>
 <p>You can play without an account (guest mode) — your progress then stays only on your device.
 Creating an account requires an email address, a username, and a password. Here is everything
 the app stores and why:</p>
@@ -144,26 +191,18 @@ your message pre-filled — we only receive it if you choose to send that email 
   <li>To create and secure your account, and let you log in on any device with your email or username.</li>
   <li>To track scores, streaks, achievements and ranks, and to run the leaderboards and the Weekly Challenge.</li>
   <li>To run the social features: friends, friend requests, and online Pass &amp; Play lobbies.</li>
-  <li>To send notifications you can turn off at any time: friend requests and invites, changes in your
-  leaderboard position, and Weekly Challenge reminders. The daily-word reminder is scheduled on your
-  device itself.</li>
-  <li>To confirm Premium purchases with Apple or Google and unlock premium features (Word Packs,
-  ad removal, catch-up days, hints).</li>
-  <li>To keep the game fair — for example, limiting how many points an account can earn per day and
-  filtering offensive words.</li>
+  <li>To send notifications you can turn off at any time: friend requests and invites, changes in your leaderboard position, and Weekly Challenge reminders. The daily-word reminder is scheduled on your device itself.</li>
+  <li>To confirm Premium purchases with Apple or Google and unlock premium features (Word Packs, ad removal, catch-up days, hints).</li>
+  <li>To keep the game fair — for example, limiting how many points an account can earn per day and filtering offensive words.</li>
   <li>To respond to bug reports and feedback you send us directly.</li>
   <li>To show ads that keep the free version of the app running (see §3).</li>
 </ul>
-<p class="note">We do not sell your personal information, and we do not use it for anything beyond
-running the game and responding to you.</p></section>
+<p class="note">We do not sell your personal information, and we do not use it for anything beyond running the game and responding to you.</p></section>
 <section id="ads"><h2><span class="num">3</span>Advertising &amp; consent</h2>
 <p>Free accounts see ads served by Google AdMob.</p>
 <ul>
-  <li><strong>European Economic Area, UK and Switzerland:</strong> the app first asks for your consent
-  through Google's consent form. You can change your choice at any time in
-  <strong>Settings → Ad privacy</strong>.</li>
-  <li><strong>iPhone and iPad:</strong> the app asks for App Tracking Transparency permission. If you decline,
-  you'll still see ads — they just won't be personalized using your device's advertising identifier.</li>
+  <li><strong>European Economic Area, UK and Switzerland:</strong> the app first asks for your consent through Google's consent form. You can change your choice at any time in <strong>Settings → Ad privacy</strong>.</li>
+  <li><strong>iPhone and iPad:</strong> the app asks for App Tracking Transparency permission. If you decline, you'll still see ads — they just won't be personalized using your device's advertising identifier.</li>
 </ul>
 <p class="note">Premium subscribers see no ads at all, anywhere in the app.</p></section>
 <section id="third-parties"><h2><span class="num">4</span>Third-party services</h2>
@@ -173,38 +212,24 @@ running the game and responding to you.</p></section>
   <div class="row"><dt>Apple</dt><dd>App Store purchases and push notifications on iPhone and iPad (Apple Push Notification service).</dd></div>
   <div class="row"><dt>Google</dt><dd>Google Play purchases, and push notifications on Android (Firebase Cloud Messaging).</dd></div>
 </dl>
-<p>Apple and Google may process data outside the European Union under their own privacy policies
-and the safeguards required by law.</p></section>
+<p>Apple and Google may process data outside the European Union under their own privacy policies and the safeguards required by law.</p></section>
 <section id="retention"><h2><span class="num">5</span>Retention &amp; deletion</h2>
-<p>Your data is kept for as long as your account exists. You can permanently delete your
-account at any time from <strong>Settings → Delete Account</strong> (after confirming it's you) —
-this immediately and permanently removes your account and its game data from our systems.
-This can't be undone.</p>
+<p>Your data is kept for as long as your account exists. You can permanently delete your account at any time from <strong>Settings → Delete Account</strong> (after confirming it's you) — this immediately and permanently removes your account and its game data from our systems. This can't be undone.</p>
 <ul>
   <li>Online Pass &amp; Play lobbies, and the words written in them, are cleaned up automatically after the game.</li>
   <li>Logging out removes your device's notification token from your account.</li>
 </ul>
-<p class="note">Deleting your account doesn't cancel an active subscription — cancel it through
-Apple or Google.</p></section>
+<p class="note">Deleting your account doesn't cancel an active subscription — cancel it through Apple or Google.</p></section>
 <section id="security"><h2><span class="num">6</span>Security</h2>
-<p>Passwords are stored only as a one-way hash (bcrypt) by our sign-in provider — nobody, including us,
-can read your actual password. All requests to our servers are made over HTTPS, and scores, streaks
-and purchases are checked on the server rather than trusted from the app.</p></section>
+<p>Passwords are stored only as a one-way hash (bcrypt) by our sign-in provider — nobody, including us, can read your actual password. All requests to our servers are made over HTTPS, and scores, streaks and purchases are checked on the server rather than trusted from the app.</p></section>
 <section id="children"><h2><span class="num">7</span>Children's privacy</h2>
-<p>Hangmania is not directed at children under 13, and we do not knowingly collect personal
-information from them. If you believe a child has provided us information, contact us
-(§10) and we'll remove it.</p></section>
+<p>Hangmania is not directed at children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided us information, contact us (§10) and we'll remove it.</p></section>
 <section id="rights"><h2><span class="num">8</span>Your rights</h2>
-<p>You have the right to access the data tied to your account, correct it, delete it, receive a
-copy of it, and object to or restrict how it's used. Email us to use any of these rights — or use
-Delete Account in-app for immediate self-service deletion. If you're in the EU, you can also
-complain to your local data protection authority (in Romania: ANSPDCP).</p></section>
+<p>You have the right to access the data tied to your account, correct it, delete it, receive a copy of it, and object to or restrict how it's used. Email us to use any of these rights — or use Delete Account in-app for immediate self-service deletion. If you're in the EU, you can also complain to your local data protection authority (in Romania: ANSPDCP).</p></section>
 <section id="changes"><h2><span class="num">9</span>Changes to this policy</h2>
-<p>If this policy changes in a meaningful way, we'll update the effective date at the top
-of this page. Continued use of the app after a change means you accept the update.</p></section>
+<p>If this policy changes in a meaningful way, we'll update the effective date at the top of this page. Continued use of the app after a change means you accept the update.</p></section>
 <section id="contact"><h2><span class="num">10</span>Contact</h2>
-<p>Hangmania is made by FB Center. Questions, requests, or concerns about your data:
-<a href="mailto:fbcenterofficial@gmail.com">fbcenterofficial@gmail.com</a></p></section>
+<p>Hangmania is made by FB Center. Questions, requests, or concerns about your data: <a href="mailto:fbcenterofficial@gmail.com">fbcenterofficial@gmail.com</a></p></section>
 </main>
 
 <footer>
@@ -218,6 +243,17 @@ of this page. Continued use of the app after a change means you accept the updat
     </nav>
   </div>
 </footer>
-
+<script>
+  (function () {
+    var menu = document.querySelector(".lang-menu");
+    if (!menu) return;
+    document.addEventListener("click", function (e) { if (!menu.contains(e.target)) menu.removeAttribute("open"); });
+    menu.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        try { localStorage.setItem("fbc-lang", a.getAttribute("hreflang")); } catch (e) {}
+      });
+    });
+  })();
+</script>
 </body>
 </html>

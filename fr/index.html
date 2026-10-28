@@ -47,16 +47,8 @@
   .page { max-width: 880px; margin: 0 auto; padding: 24px 24px 96px; }
   @media (max-width: 560px) { .page { padding: 16px 16px 72px; } }
 
-  /* ---------- Language switch ---------- */
-  .lang-switch { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 4px; margin-bottom: 40px; }
-  .lang-switch a {
-    font-family: var(--font-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.06em;
-    text-transform: uppercase; text-decoration: none; color: var(--ink-soft);
-    padding: 6px 9px; border-radius: 8px;
-  }
-  .lang-switch a:hover { color: var(--ink); background: var(--bg-tint); }
-  .lang-switch a[aria-current="page"] { color: var(--blue); background: var(--bg-tint); }
-
+  /* ---------- Top bar: language menu ---------- */
+  .topbar { display: flex; justify-content: flex-end; margin-bottom: 32px; }
   /* ---------- Hero ---------- */
   .hero { display: flex; flex-direction: column; align-items: center; text-align: center;
           padding-bottom: 56px; margin-bottom: 64px; border-bottom: 1px solid var(--rule); }
@@ -165,20 +157,31 @@
     .product:nth-of-type(2) { animation-delay: 0.1s; }
     @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
   }
+
+  .lang-menu { position: relative; }
+  .lang-menu summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-size: 14px; font-weight: 600; color: var(--ink);
+    background: #FFFFFF; border: 1px solid var(--rule); border-radius: 999px; padding: 8px 14px;
+    box-shadow: 0 2px 8px rgba(30,42,94,.06); user-select: none; }
+  .lang-menu summary::-webkit-details-marker { display: none; }
+  .lang-menu summary:hover { border-color: #C9D4F5; }
+  .lang-menu summary svg { width: 16px; height: 16px; color: var(--blue); }
+  .lang-menu .chev { width: 12px; height: 12px; transition: transform .15s ease; color: var(--ink-soft); }
+  .lang-menu[open] .chev { transform: rotate(180deg); }
+  .lang-menu ul { position: absolute; right: 0; top: calc(100% + 8px); z-index: 20; list-style: none; margin: 0;
+    padding: 6px; min-width: 190px; background: #FFFFFF; border: 1px solid var(--rule); border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(30,42,94,.16); }
+  .lang-menu li a { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 10px;
+    text-decoration: none; color: var(--ink); font-size: 14.5px; }
+  .lang-menu li a:hover { background: #F3F6FF; color: var(--blue); }
+  .lang-menu li a[aria-current="page"] { background: #E8EEFF; color: var(--blue); font-weight: 600; }
+  .lang-menu li a[aria-current="page"]::after { content: "✓"; margin-left: auto; }
 </style>
 </head>
 <body>
 <div class="page">
 
-  <nav class="lang-switch" aria-label="Langue">
-    <a href="/" hreflang="en" lang="en" title="English">en</a>
-    <a href="/ro/" hreflang="ro" lang="ro" title="Română">ro</a>
-    <a href="/fr/" hreflang="fr" lang="fr" title="Français" aria-current="page">fr</a>
-    <a href="/es/" hreflang="es" lang="es" title="Español">es</a>
-    <a href="/de/" hreflang="de" lang="de" title="Deutsch">de</a>
-    <a href="/it/" hreflang="it" lang="it" title="Italiano">it</a>
-    <a href="/pt/" hreflang="pt" lang="pt" title="Português">pt</a>
-  </nav>
+  <div class="topbar"><details class="lang-menu"><summary aria-label="Langue: Français"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20z"/></svg><span>Français</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><ul><li><a href="/" hreflang="en" lang="en"><span aria-hidden="true">🇬🇧</span>English</a></li><li><a href="/ro/" hreflang="ro" lang="ro"><span aria-hidden="true">🇷🇴</span>Română</a></li><li><a href="/fr/" hreflang="fr" lang="fr" aria-current="page"><span aria-hidden="true">🇫🇷</span>Français</a></li><li><a href="/es/" hreflang="es" lang="es"><span aria-hidden="true">🇪🇸</span>Español</a></li><li><a href="/de/" hreflang="de" lang="de"><span aria-hidden="true">🇩🇪</span>Deutsch</a></li><li><a href="/it/" hreflang="it" lang="it"><span aria-hidden="true">🇮🇹</span>Italiano</a></li><li><a href="/pt/" hreflang="pt" lang="pt"><span aria-hidden="true">🇵🇹</span>Português</a></li></ul></details></div>
 
   <header class="hero">
     <img class="logo" alt="FB Center" width="429" height="372" src="/assets/fbcenter-logo.png">
@@ -236,9 +239,9 @@
           <a class="store" href="https://play.google.com/store/apps/details?id=com.fabianmorar.hangman" target="_blank" rel="noopener"><small>Disponible sur</small><span>Google Play</span></a>
         </div>
         <div class="links">
-          <a href="/hangman-privacy-policy/">Politique de confidentialité</a>
-          <a href="/hangman-privacy-policy/terms-of-service.html">Conditions d&#x27;utilisation</a>
-          <a href="/hangman-privacy-policy/support.html">Assistance</a>
+          <a href="/fr/hangman-privacy-policy/">Politique de confidentialité</a>
+          <a href="/fr/hangman-privacy-policy/terms-of-service.html">Conditions d&#x27;utilisation</a>
+          <a href="/fr/hangman-privacy-policy/support.html">Assistance</a>
         </div>
       </div>
         <div class="gallery">
@@ -300,12 +303,16 @@
 
 </div>
 <script>
-  // Remembers an explicit pick so the English page stops redirecting by browser language.
-  document.querySelectorAll(".lang-switch a").forEach(function (a) {
-    a.addEventListener("click", function () {
-      try { localStorage.setItem("fbc-lang", a.getAttribute("hreflang")); } catch (e) {}
+  (function () {
+    var menu = document.querySelector(".lang-menu");
+    if (!menu) return;
+    document.addEventListener("click", function (e) { if (!menu.contains(e.target)) menu.removeAttribute("open"); });
+    menu.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        try { localStorage.setItem("fbc-lang", a.getAttribute("hreflang")); } catch (e) {}
+      });
     });
-  });
+  })();
 </script>
 </body>
 </html>

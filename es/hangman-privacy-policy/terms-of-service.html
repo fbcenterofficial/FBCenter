@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hangmania — Términos de servicio</title>
+<meta name="description" content="Términos de servicio de Hangmania, un juego de adivinar palabras de FB Center.">
+<link rel="canonical" href="https://fb-center.com/es/hangman-privacy-policy/terms-of-service.html">
+<link rel="alternate" hreflang="en" href="https://fb-center.com/hangman-privacy-policy/terms-of-service.html">
+<link rel="alternate" hreflang="ro" href="https://fb-center.com/ro/hangman-privacy-policy/terms-of-service.html">
+<link rel="alternate" hreflang="fr" href="https://fb-center.com/fr/hangman-privacy-policy/terms-of-service.html">
+<link rel="alternate" hreflang="es" href="https://fb-center.com/es/hangman-privacy-policy/terms-of-service.html">
+<link rel="alternate" hreflang="de" href="https://fb-center.com/de/hangman-privacy-policy/terms-of-service.html">
+<link rel="alternate" hreflang="it" href="https://fb-center.com/it/hangman-privacy-policy/terms-of-service.html">
+<link rel="alternate" hreflang="pt" href="https://fb-center.com/pt/hangman-privacy-policy/terms-of-service.html">
+<link rel="alternate" hreflang="x-default" href="https://fb-center.com/hangman-privacy-policy/terms-of-service.html">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+
+<style>
+  :root {
+    --bg: #FFFFFF; --tint: #F3F6FF; --tint-2: #E8EEFF;
+    --ink: #10173A; --ink-soft: #55618C; --rule: #E1E7FA;
+    --navy: #1E2A5E; --blue: #3454D1; --blue-deep: #22379E;
+    --font-display: "Sora", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body);
+         -webkit-font-smoothing: antialiased; line-height: 1.65; }
+  a { color: var(--blue); }
+  a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+  /* ---------- Header band ---------- */
+  .band { background: linear-gradient(180deg, var(--tint-2) 0%, var(--tint) 60%, var(--bg) 100%);
+          border-bottom: 1px solid var(--rule); }
+  .band-inner { max-width: 820px; margin: 0 auto; padding: 22px 24px 30px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+  .brand svg { width: 44px; height: 44px; flex: none; border-radius: 11px; box-shadow: 0 4px 14px rgba(30,42,94,.18); }
+  .brand b { font-family: var(--font-display); font-size: 19px; display: block; line-height: 1.15; }
+  .brand small { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-soft); letter-spacing: .04em; }
+  .topline { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .translation { font-size: 13px; color: var(--ink-soft); margin: 14px 0 0; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 22px 0 26px; padding: 5px; background: #FFFFFF;
+          border: 1px solid var(--rule); border-radius: 999px; width: fit-content; max-width: 100%; }
+  .tabs a { text-decoration: none; color: var(--ink-soft); font-weight: 600; font-size: 14px;
+            padding: 8px 16px; border-radius: 999px; }
+  .tabs a:hover { color: var(--blue); }
+  .tabs a[aria-current="page"] { background: var(--blue); color: #FFFFFF; }
+  h1 { font-family: var(--font-display); font-size: clamp(30px, 5vw, 40px); line-height: 1.15;
+       letter-spacing: -0.02em; color: var(--navy); margin: 0 0 12px; }
+  .meta { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 12px;
+          font-weight: 600; color: var(--blue); background: #FFFFFF; border: 1px solid var(--rule);
+          border-radius: 999px; padding: 5px 12px; margin-bottom: 16px; }
+  .lede { font-size: 16.5px; color: var(--ink-soft); max-width: 62ch; margin: 0; }
+
+  /* ---------- Body ---------- */
+  main { max-width: 820px; margin: 0 auto; padding: 34px 24px 72px; }
+  .card { border: 1px solid var(--rule); border-radius: 20px; padding: 22px 24px; background: #FFFFFF; }
+  .toc { margin-bottom: 36px; }
+  .toc h2 { font-family: var(--font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase;
+            color: var(--blue); margin: 0 0 12px; }
+  .toc ol { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 20px; }
+  .toc a { display: flex; gap: 10px; align-items: baseline; text-decoration: none; color: var(--ink); font-size: 14.5px; padding: 4px 0; }
+  .toc a:hover { color: var(--blue); }
+  .toc a span { font-family: var(--font-mono); font-size: 12px; color: var(--blue); min-width: 20px; }
+  @media (max-width: 600px) { .toc ol { grid-template-columns: 1fr; } }
+
+  section { padding: 26px 0; border-top: 1px solid var(--rule); scroll-margin-top: 16px; }
+  section:first-of-type { border-top: 0; padding-top: 0; }
+  section h2 { display: flex; align-items: center; gap: 12px; font-family: var(--font-display);
+               font-size: 21px; color: var(--navy); margin: 0 0 12px; }
+  .num { width: 32px; height: 32px; border-radius: 10px; background: var(--tint-2); color: var(--blue);
+         font-family: var(--font-mono); font-size: 14px; font-weight: 600; display: grid; place-items: center; flex: none; }
+  section p, section li { color: var(--ink-soft); font-size: 15.5px; }
+  section p { margin: 0 0 12px; }
+  section ul { margin: 0 0 12px; padding-left: 20px; }
+  section li { margin-bottom: 6px; }
+  strong { color: var(--ink); }
+
+  .rows { border: 1px solid var(--rule); border-radius: 16px; overflow: hidden; margin: 6px 0 14px; }
+  .row { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 14px; padding: 12px 16px; border-top: 1px solid var(--rule); font-size: 15px; }
+  .row:first-child { border-top: 0; }
+  .row dt { font-weight: 600; color: var(--navy); margin: 0; }
+  .row dd { margin: 0; color: var(--ink-soft); }
+  .row.muted { background: var(--tint); }
+  @media (max-width: 520px) { .row { grid-template-columns: 1fr; gap: 2px; } }
+
+  .note { background: var(--tint); border: 1px solid var(--tint-2); border-left: 4px solid var(--blue);
+          border-radius: 12px; padding: 12px 16px; color: var(--ink); font-size: 15px; margin: 6px 0 14px; }
+
+  .contact-card { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+                  background: linear-gradient(135deg, var(--navy), var(--blue)); color: #FFFFFF; border-radius: 22px;
+                  padding: 26px 28px; margin: 4px 0 34px; }
+  .contact-card .label { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; opacity: .8; }
+  .contact-card .email { font-family: var(--font-mono); font-size: 17px; font-weight: 600; word-break: break-all; }
+  .btn { display: inline-flex; align-items: center; background: #FFFFFF; color: var(--navy); text-decoration: none;
+         font-weight: 700; font-size: 15px; padding: 12px 24px; border-radius: 999px; }
+  .btn:hover { background: var(--tint-2); }
+  @media (max-width: 520px) { .contact-card .btn { width: 100%; justify-content: center; } }
+
+  .faq { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
+  .faq details { border: 1px solid var(--rule); border-radius: 16px; padding: 14px 18px; background: #FFFFFF; }
+  .faq details[open] { border-color: var(--tint-2); background: var(--tint); }
+  .faq summary { cursor: pointer; font-weight: 600; color: var(--navy); list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; color: var(--blue); font-family: var(--font-mono); font-size: 18px; line-height: 1; }
+  .faq details[open] summary::after { content: "–"; }
+  .faq details p { margin: 10px 0 0; color: var(--ink-soft); font-size: 15px; }
+
+  footer { border-top: 1px solid var(--rule); }
+  .foot { max-width: 820px; margin: 0 auto; padding: 22px 24px 40px; display: flex; flex-wrap: wrap; gap: 10px 22px;
+          justify-content: space-between; font-size: 13.5px; color: var(--ink-soft); }
+  .foot nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .foot a { color: var(--ink-soft); text-decoration: none; }
+  .foot a:hover { color: var(--blue); }
+  @media (max-width: 560px) { .band-inner, main, .foot { padding-left: 16px; padding-right: 16px; } }
+
+  .lang-menu { position: relative; }
+  .lang-menu summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-body); font-size: 14px; font-weight: 600; color: var(--ink);
+    background: #FFFFFF; border: 1px solid var(--rule); border-radius: 999px; padding: 8px 14px;
+    box-shadow: 0 2px 8px rgba(30,42,94,.06); user-select: none; }
+  .lang-menu summary::-webkit-details-marker { display: none; }
+  .lang-menu summary:hover { border-color: #C9D4F5; }
+  .lang-menu summary svg { width: 16px; height: 16px; color: var(--blue); }
+  .lang-menu .chev { width: 12px; height: 12px; transition: transform .15s ease; color: var(--ink-soft); }
+  .lang-menu[open] .chev { transform: rotate(180deg); }
+  .lang-menu ul { position: absolute; right: 0; top: calc(100% + 8px); z-index: 20; list-style: none; margin: 0;
+    padding: 6px; min-width: 190px; background: #FFFFFF; border: 1px solid var(--rule); border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(30,42,94,.16); }
+  .lang-menu li a { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 10px;
+    text-decoration: none; color: var(--ink); font-size: 14.5px; }
+  .lang-menu li a:hover { background: #F3F6FF; color: var(--blue); }
+  .lang-menu li a[aria-current="page"] { background: #E8EEFF; color: var(--blue); font-weight: 600; }
+  .lang-menu li a[aria-current="page"]::after { content: "✓"; margin-left: auto; }
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="band-inner">
+    <div class="topline">
+      <a class="brand" href="/es/"><svg viewBox="0 0 512 512" aria-hidden="true"><defs><linearGradient id="hm" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1B3358"/><stop offset="100%" stop-color="#0E1F38"/></linearGradient></defs><rect width="512" height="512" rx="110" fill="url(#hm)"/><g stroke="#F2EFE6" stroke-width="20" stroke-linecap="round" fill="none"><line x1="160" y1="120" x2="160" y2="360"/><line x1="160" y1="160" x2="320" y2="160"/><line x1="320" y1="160" x2="320" y2="220"/></g><circle cx="320" cy="248" r="26" fill="none" stroke="#E8B84B" stroke-width="18"/><line x1="320" y1="274" x2="320" y2="330" stroke="#E8B84B" stroke-width="18" stroke-linecap="round"/><line x1="320" y1="288" x2="298" y2="312" stroke="#E8B84B" stroke-width="14" stroke-linecap="round"/><line x1="320" y1="288" x2="342" y2="312" stroke="#E8B84B" stroke-width="14" stroke-linecap="round"/><g stroke="#F2EFE6" stroke-width="14" stroke-linecap="round"><line x1="140" y1="400" x2="180" y2="400"/><line x1="200" y1="400" x2="240" y2="400"/><line x1="260" y1="400" x2="300" y2="400"/><line x1="320" y1="400" x2="360" y2="400"/></g></svg><span><b>Hangmania</b><small>by FB Center</small></span></a>
+      <details class="lang-menu"><summary aria-label="Idioma: Español"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20z"/></svg><span>Español</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><ul><li><a href="/hangman-privacy-policy/terms-of-service.html" hreflang="en" lang="en"><span aria-hidden="true">🇬🇧</span>English</a></li><li><a href="/ro/hangman-privacy-policy/terms-of-service.html" hreflang="ro" lang="ro"><span aria-hidden="true">🇷🇴</span>Română</a></li><li><a href="/fr/hangman-privacy-policy/terms-of-service.html" hreflang="fr" lang="fr"><span aria-hidden="true">🇫🇷</span>Français</a></li><li><a href="/es/hangman-privacy-policy/terms-of-service.html" hreflang="es" lang="es" aria-current="page"><span aria-hidden="true">🇪🇸</span>Español</a></li><li><a href="/de/hangman-privacy-policy/terms-of-service.html" hreflang="de" lang="de"><span aria-hidden="true">🇩🇪</span>Deutsch</a></li><li><a href="/it/hangman-privacy-policy/terms-of-service.html" hreflang="it" lang="it"><span aria-hidden="true">🇮🇹</span>Italiano</a></li><li><a href="/pt/hangman-privacy-policy/terms-of-service.html" hreflang="pt" lang="pt"><span aria-hidden="true">🇵🇹</span>Português</a></li></ul></details>
+    </div>
+    <nav class="tabs" aria-label="Hangmania"><a href="/es/hangman-privacy-policy/">Privacidad</a><a href="/es/hangman-privacy-policy/terms-of-service.html" aria-current="page">Términos</a><a href="/es/hangman-privacy-policy/support.html">Soporte</a></nav>
+    <h1>Términos de servicio</h1>
+    <div class="meta">Vigentes desde el 28 de octubre de 2026</div>
+    <p class="lede">Las reglas para usar Hangmania, en lenguaje claro.</p>
+    <p class="translation">Esta es una traducción. Si difiere de la versión en inglés, prevalece la versión en inglés. <a href="/hangman-privacy-policy/terms-of-service.html">English</a></p>
+  </div>
+</header>
+
+<main>
+<nav class="card toc" aria-label="En esta página"><h2>En esta página</h2><ol><li><a href="#acceptance"><span>1</span>Aceptación de los términos</a></li><li><a href="#about"><span>2</span>Sobre Hangmania</a></li><li><a href="#eligibility"><span>3</span>Requisitos de edad</a></li><li><a href="#account"><span>4</span>Tu cuenta</a></li><li><a href="#subscriptions"><span>5</span>Suscripciones y compras en la app</a></li><li><a href="#acceptable-use"><span>6</span>Uso aceptable</a></li><li><a href="#content"><span>7</span>Contenido que aportas</a></li><li><a href="#advertising"><span>8</span>Publicidad</a></li><li><a href="#ip"><span>9</span>Propiedad intelectual</a></li><li><a href="#warranty"><span>10</span>Sin garantía</a></li><li><a href="#liability"><span>11</span>Limitación de responsabilidad</a></li><li><a href="#termination"><span>12</span>Terminación</a></li><li><a href="#changes"><span>13</span>Cambios en los términos</a></li><li><a href="#contact"><span>14</span>Contacto</a></li></ol></nav><p class="note"><strong>En resumen:</strong> juega limpio, mantén los nombres y las palabras decentes, la suscripción se renueva hasta que la canceles en Apple o Google (no con nosotros), no intentes romper el juego ni las clasificaciones, y podemos suspender las cuentas que lo hagan. Abajo está la versión completa.</p><section id="acceptance"><h2><span class="num">1</span>Aceptación de los términos</h2>
+<p>Estos Términos de servicio (los «Términos») son un acuerdo entre tú y FB Center («nosotros») que regula el uso de Hangmania (la «App»). Al descargar, instalar o usar la App, aceptas estos Términos. Si no estás de acuerdo, no uses la App.</p>
+<p>Consulta también nuestra <a href="/es/hangman-privacy-policy/">Política de privacidad</a>, que explica qué información recogemos y cómo — forma parte de estos Términos.</p></section>
+<section id="about"><h2><span class="num">2</span>Sobre Hangmania</h2>
+<p>Hangmania es un juego de adivinar palabras con varios modos — Clásico, Killer, Palabra del día, Time Attack, Anagrama y Weekly Challenge — además de paquetes de palabras temáticos, Pass &amp; Play (en un solo móvil o en línea con un código de sala), amigos, clasificaciones públicas y una suscripción Premium opcional. Algunas funciones (rachas, clasificaciones, amigos y juego en línea) requieren una cuenta gratuita; otras funcionan sin ella.</p></section>
+<section id="eligibility"><h2><span class="num">3</span>Requisitos de edad</h2>
+<p>Hangmania no está dirigida a menores de 13 años y necesitas tener al menos 13 años para crear una cuenta. Si eres menor de edad donde vives, necesitas permiso de tus padres o tutores para hacer compras en la app.</p></section>
+<section id="account"><h2><span class="num">4</span>Tu cuenta</h2>
+<p>Para crear una cuenta necesitas un correo, un nombre de usuario y una contraseña; después puedes iniciar sesión con el correo o con el nombre de usuario. Eres responsable de tus credenciales y de todo lo que ocurra en tu cuenta. Una cuenta por persona — no compartas tus credenciales ni crees cuentas para otros.</p>
+<p>Puedes eliminar tu cuenta cuando quieras desde los Ajustes de la App. Se borran para siempre la cuenta y sus datos de juego — sin vuelta atrás.</p></section>
+<section id="subscriptions"><h2><span class="num">5</span>Suscripciones y compras en la app</h2>
+<p>Hangmania Premium es una suscripción mensual o anual con renovación automática, comprada y facturada a través del App Store de Apple o Google Play — según la tienda de la que descargaste la App. Nunca vemos ni guardamos tus datos de pago; solo confirmamos con la tienda que la suscripción está activa.</p>
+<ul>
+  <li>La suscripción se renueva automáticamente al precio acordado hasta que la canceles.</li>
+  <li>Cancélala cuando quieras en los ajustes de tu ID de Apple o de tu cuenta de Google Play — no dentro de la App, que no puede cancelar directamente una suscripción facturada por la tienda.</li>
+  <li>Una suscripción activa Premium en una sola cuenta de Hangmania a la vez.</li>
+  <li>Los reembolsos los gestionan Apple o Google según sus propias políticas; nosotros no podemos reembolsar directamente.</li>
+  <li>Los precios pueden cambiar; la tienda te mostrará el nuevo precio antes de tu próxima renovación.</li>
+</ul></section>
+<section id="acceptable-use"><h2><span class="num">6</span>Uso aceptable</h2>
+<p>Al usar Hangmania, aceptas no:</p>
+<ul>
+  <li>Hacer trampas, aprovechar errores ni usar herramientas automáticas para inflar tu puntuación, racha o puesto</li>
+  <li>Elegir un nombre de usuario, o escribir una palabra en Pass &amp; Play, ofensiva, de odio, sexual, que suplante a otra persona o infrinja una marca</li>
+  <li>Acosar a otros jugadores con solicitudes de amistad o invitaciones</li>
+  <li>Intentar hacer ingeniería inversa, descompilar o manipular la App o sus servidores</li>
+  <li>Usar la App de forma que perjudique a otros jugadores</li>
+</ul>
+<p>Podemos eliminar entradas de la clasificación, reiniciar el progreso o suspender las cuentas que incumplan esta sección.</p></section>
+<section id="content"><h2><span class="num">7</span>Contenido que aportas</h2>
+<p>Lo principal que aportas es tu nombre de usuario (visible en las clasificaciones, la búsqueda de amigos y las salas), las palabras que escribes para otros jugadores en Pass &amp; Play y, opcionalmente, un mensaje enviado por Contáctanos. Eres responsable de lo que envías, que no debe ser ilegal, acosador ni infringir derechos ajenos. La App filtra las palabras ofensivas, pero el filtro no puede detectarlo todo.</p></section>
+<section id="advertising"><h2><span class="num">8</span>Publicidad</h2>
+<p>Las cuentas gratuitas ven anuncios de la red Google Mobile Ads (AdMob), que pueden ser personalizados si lo has permitido. En el EEE, el Reino Unido y Suiza, la App te pide primero el consentimiento, que puedes cambiar en Ajustes → Privacidad de anuncios. Los suscriptores Premium no ven anuncios. Consulta nuestra <a href="/es/hangman-privacy-policy/">Política de privacidad</a> para saber a qué puede acceder la red publicitaria.</p></section>
+<section id="ip"><h2><span class="num">9</span>Propiedad intelectual</h2>
+<p>La App, su diseño, sus gráficos y el nombre Hangmania pertenecen a FB Center o a sus licenciantes. Algunas listas de palabras se basan en FrequencyWords de Hermit Dave, con licencia CC BY-SA 4.0. Estos Términos te dan una licencia personal e intransferible para usar la App para su fin — no te transfieren la propiedad de nada.</p></section>
+<section id="warranty"><h2><span class="num">10</span>Sin garantía</h2>
+<p>Hangmania se ofrece «tal cual». No garantizamos que esté siempre disponible, sin errores ni interrupciones — como cualquier app que depende de internet y de servicios de terceros, a veces puede fallar, ir lenta o dejar de funcionar.</p></section>
+<section id="liability"><h2><span class="num">11</span>Limitación de responsabilidad</h2>
+<p>En la máxima medida permitida por la ley, FB Center no es responsable de daños indirectos, incidentales o consecuentes derivados del uso de la App. Nuestra responsabilidad total por cualquier reclamación se limita a lo que nos hayas pagado, si es el caso, en los 12 meses anteriores.</p></section>
+<section id="termination"><h2><span class="num">12</span>Terminación</h2>
+<p>Puedes dejar de usar la App y eliminar tu cuenta cuando quieras. Podemos suspender o cerrar las cuentas que incumplan estos Términos, incluida la sección de uso aceptable.</p>
+<p class="note">Eliminar la cuenta no cancela automáticamente una suscripción activa — cancélala aparte en Apple o Google, o podrían seguir cobrándote.</p></section>
+<section id="changes"><h2><span class="num">13</span>Cambios en los términos</h2>
+<p>Podemos actualizar estos Términos a medida que cambie la App. Si hacemos un cambio importante, actualizaremos la fecha de vigencia. Seguir usando Hangmania después de un cambio implica que lo aceptas.</p></section>
+<section id="contact"><h2><span class="num">14</span>Contacto</h2>
+<p>¿Preguntas sobre estos Términos? Escríbenos a <a href="mailto:fbcenterofficial@gmail.com">fbcenterofficial@gmail.com</a> o desde la página Contáctanos de la App.</p></section>
+</main>
+
+<footer>
+  <div class="foot">
+    <span>Hangmania — un juego de palabras de <a href="/es/">FB Center</a></span>
+    <nav>
+      <a href="/es/hangman-privacy-policy/">Política de privacidad</a>
+      <a href="/es/hangman-privacy-policy/terms-of-service.html">Términos de servicio</a>
+      <a href="/es/hangman-privacy-policy/support.html">Soporte</a>
+      <a href="mailto:fbcenterofficial@gmail.com">fbcenterofficial@gmail.com</a>
+    </nav>
+  </div>
+</footer>
+<script>
+  (function () {
+    var menu = document.querySelector(".lang-menu");
+    if (!menu) return;
+    document.addEventListener("click", function (e) { if (!menu.contains(e.target)) menu.removeAttribute("open"); });
+    menu.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        try { localStorage.setItem("fbc-lang", a.getAttribute("hreflang")); } catch (e) {}
+      });
+    });
+  })();
+</script>
+</body>
+</html>
