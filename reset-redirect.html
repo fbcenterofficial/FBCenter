@@ -61,6 +61,17 @@
       return;
     }
 
+    // This page is also the project's Site URL, so the other link emails (email change, invite)
+    // and older app versions — whose own reset page no longer exists — land here too. Only a
+    // password-recovery link opens the "new password" screen; anything else just opens the app.
+    var type = (params.match(/(?:^|&)type=([^&]*)/) || [])[1];
+    if (type && type !== "recovery") {
+      title.textContent = ro ? "Gata! ✓" : "All done! ✓";
+      text.textContent = ro ? "Poți reveni în Hangmania." : "You can go back to Hangmania.";
+      button.href = "hangman://";
+      return;
+    }
+
     var target = "hangman://reset-password#" + params;
     button.href = target;
     // Works in regular browsers; in-app ones fall back to the button.
