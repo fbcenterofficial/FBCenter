@@ -5,12 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hangmania — Google Play</title>
 <meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=https://play.google.com/store/apps/details?id=com.fabianmorar.hangman">
-<link rel="canonical" href="https://play.google.com/store/apps/details?id=com.fabianmorar.hangman">
-<script>location.replace("https://play.google.com/store/apps/details?id=com.fabianmorar.hangman");</script>
+<link rel="icon" href="/hangman-privacy-policy/email-assets/hangman-icon.png">
+<script>
+  // Opens the store app itself (market://) so the store's own web page never loads; anything
+  // that can't handle that (a computer) gets the normal store page instead.
+  (function () {
+    var web = "https://play.google.com/store/apps/details?id=com.fabianmorar.hangman";
+    var ua = navigator.userAgent || "";
+    var phone = /Android/i.test(ua);
+    if (!phone) { location.replace(web); return; }
+    location.href = "market://details?id=com.fabianmorar.hangman";
+    setTimeout(function () { if (!document.hidden) location.href = web; }, 1500);
+  })();
+</script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;
+         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         background: linear-gradient(180deg, #EAEFF9 0%, #E5EAF6 55%, #DCE4F5 100%); color: #0B2C6B; }
+  .card { background: #fff; border: 1px solid #DDE3EC; border-radius: 24px; padding: 32px 28px; max-width: 360px; width: 100%;
+          text-align: center; box-shadow: 0 8px 24px rgba(11,44,107,.15); }
+  img { width: 88px; height: 88px; border-radius: 20px; box-shadow: 0 6px 16px rgba(11,44,107,.25); }
+  h1 { font-size: 26px; margin-top: 14px; }
+  p { color: #5B6B8C; margin: 8px 0 20px; line-height: 1.45; }
+  a { display: block; text-decoration: none; font-weight: 700; font-size: 17px; border-radius: 14px; padding: 14px;
+       background: #E8B84B; color: #0B2C6B; }
+</style>
 </head>
-<body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#EAEFF9;color:#0B2C6B;text-align:center;padding:48px 20px">
-  <p>Opening Hangmania on Google Play…</p>
-  <p><a href="https://play.google.com/store/apps/details?id=com.fabianmorar.hangman" style="color:#0B2C6B;font-weight:700">Tap here if nothing happens</a></p>
+<body>
+  <main class="card">
+    <img src="/hangman-privacy-policy/email-assets/hangman-icon.png" alt="Hangmania">
+    <h1>Hangmania</h1>
+    <p>The classic word-guessing game, reinvented.<br>Free on Android.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.fabianmorar.hangman">Get it on Google Play</a>
+  </main>
 </body>
 </html>
