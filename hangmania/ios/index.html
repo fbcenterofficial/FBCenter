@@ -3,21 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hangmania — App Store</title>
+<title>Hangmania — the App Store</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="/hangman-privacy-policy/email-assets/hangman-icon.png">
-<script>
-  // Opens the store app itself (itms-apps://) so the store's own web page never loads; anything
-  // that can't handle that (a computer) gets the normal store page instead.
-  (function () {
-    var web = "https://apps.apple.com/app/id6795192012";
-    var ua = navigator.userAgent || "";
-    var phone = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
-    if (!phone) { location.replace(web); return; }
-    location.href = "itms-apps://apps.apple.com/app/id6795192012";
-    setTimeout(function () { if (!document.hidden) location.href = web; }, 1500);
-  })();
-</script>
+<script>location.replace("https://apps.apple.com/app/id6795192012");</script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;
@@ -28,16 +17,19 @@
   img { width: 88px; height: 88px; border-radius: 20px; box-shadow: 0 6px 16px rgba(11,44,107,.25); }
   h1 { font-size: 26px; margin-top: 14px; }
   p { color: #5B6B8C; margin: 8px 0 20px; line-height: 1.45; }
-  a { display: block; text-decoration: none; font-weight: 700; font-size: 17px; border-radius: 14px; padding: 14px;
-       background: #0B2C6B; color: #fff; }
+  a { display: block; text-decoration: none; font-weight: 700; font-size: 17px; border-radius: 14px; padding: 14px; }
+  .site { background: #0B2C6B; color: #fff; }
+  .store { margin-top: 10px; color: #0B2C6B; border: 1.5px solid #0B2C6B; font-size: 15px; }
 </style>
 </head>
 <body>
+  <!-- Left behind in the browser once the store has opened: a way on to the official site. -->
   <main class="card">
     <img src="/hangman-privacy-policy/email-assets/hangman-icon.png" alt="Hangmania">
     <h1>Hangmania</h1>
-    <p>The classic word-guessing game, reinvented.<br>Free on iPhone.</p>
-    <a href="https://apps.apple.com/app/id6795192012">Download on the App Store</a>
+    <p>The classic word-guessing game, reinvented.<br>Made by FB Center.</p>
+    <a class="site" href="https://fb-center.com/">Visit our website</a>
+    <a class="store" href="https://apps.apple.com/app/id6795192012">Open the App Store</a>
   </main>
 </body>
 </html>
