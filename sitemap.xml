@@ -70,4 +70,7 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://fb-center.com/it/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://fb-center.com/pt/"/>
   </url>
+  <url>
+    <loc>https://fb-center.com/play/</loc>
+  </url>
 </urlset>
