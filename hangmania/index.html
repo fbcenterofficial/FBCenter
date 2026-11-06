@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hangmania — everything about the game</title>
+<meta name="description" content="Everything about Hangmania: game modes, scoring, difficulty, word packs, ranks, Premium and more.">
+<link rel="canonical" href="https://fb-center.com/hangmania/">
+<link rel="alternate" hreflang="en" href="https://fb-center.com/hangmania/"><link rel="alternate" hreflang="ro" href="https://fb-center.com/ro/hangmania/"><link rel="alternate" hreflang="fr" href="https://fb-center.com/fr/hangmania/"><link rel="alternate" hreflang="es" href="https://fb-center.com/es/hangmania/"><link rel="alternate" hreflang="de" href="https://fb-center.com/de/hangmania/"><link rel="alternate" hreflang="it" href="https://fb-center.com/it/hangmania/"><link rel="alternate" hreflang="pt" href="https://fb-center.com/pt/hangmania/">
+<link rel="icon" href="/play/img/icon.png">
+<meta name="theme-color" content="#0B2C6B">
+<meta property="og:title" content="Hangmania — everything about the game">
+<meta property="og:description" content="Everything about Hangmania: game modes, scoring, difficulty, word packs, ranks, Premium and more.">
+<meta property="og:image" content="https://fb-center.com/play/img/icon.png">
+<style>
+  :root { --navy: #0B2C6B; --gold: #E8B84B; --line: #DDE3EC; --muted: #8899AA; --sub: #5B6B8C; color-scheme: light; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: #EAEFF9; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--navy);
+          background: linear-gradient(180deg, #EAEFF9 0%, #E5EAF6 55%, #DCE4F5 100%) fixed; line-height: 1.5; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: max(16px, env(safe-area-inset-top)) 16px 40px; }
+  .langs { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+  .langs a { text-decoration: none; color: var(--sub); font-size: 13px; font-weight: 700; border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 4px 10px; }
+  .langs a[aria-current] { background: var(--navy); color: #fff; border-color: var(--navy); }
+  header { text-align: center; padding: 22px 0 8px; }
+  header img { border-radius: 22px; box-shadow: 0 8px 24px rgba(11,44,107,.18); }
+  h1 { font-size: 36px; margin-top: 12px; }
+  .lede { color: var(--sub); font-size: 17px; max-width: 560px; margin: 8px auto 0; }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 18px; }
+  .cta a { text-decoration: none; font-weight: 700; font-size: 15px; border-radius: 14px; padding: 11px 16px; background: var(--navy); color: #fff; }
+  .cta a.gold { background: var(--gold); color: var(--navy); }
+  section { background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 20px; margin-top: 18px; }
+  h2 { font-size: 22px; margin-bottom: 12px; }
+  ul.list { list-style: none; display: grid; gap: 12px; }
+  ul.list li { display: flex; gap: 12px; align-items: flex-start; color: var(--sub); font-size: 15px; }
+  ul.list b { color: var(--navy); font-size: 16px; }
+  .ico { font-size: 22px; line-height: 1.2; width: 28px; text-align: center; flex: none; }
+  .soon { display: inline-block; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .03em; background: #FFF1CC; color: #8A6410; border-radius: 8px; padding: 1px 7px; margin-left: 4px; vertical-align: 2px; }
+  .scores { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .score { border: 1px solid var(--line); border-radius: 16px; padding: 14px; background: #FAFBFE; }
+  .score h3 { font-size: 16px; margin-bottom: 6px; }
+  .score table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .score td { padding: 5px 0; border-top: 1px solid #EEF1F6; color: var(--sub); }
+  .score tr:first-child td { border-top: 0; }
+  .score td:last-child { text-align: right; font-weight: 800; color: var(--navy); white-space: nowrap; }
+  .note { color: var(--sub); font-size: 13.5px; margin-top: 6px; }
+  .levels { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .lvl { border-radius: 16px; padding: 12px; text-align: center; color: #fff; display: flex; flex-direction: column; }
+  .lvl small { opacity: .9; }
+  .lvl.easy { background: #2E9E6B; } .lvl.medium { background: #0B2C6B; } .lvl.hard { background: #E8B84B; color: #0B2C6B; } .lvl.expert { background: #D64545; }
+  ul.grid { list-style: none; display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  ul.grid li { display: flex; justify-content: space-between; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; font-size: 14.5px; }
+  .tag { font-size: 11px; font-weight: 800; border-radius: 8px; padding: 2px 7px; }
+  .tag.free { background: #DDF3E8; color: #1E6B48; } .tag.prem { background: #FFF1CC; color: #8A6410; }
+  ul.ranks li span:last-child { color: var(--muted); font-size: 13px; white-space: nowrap; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 26px; }
+  footer a { color: var(--muted); }
+  footer p + p { margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="langs" aria-label="Language"><a href="/hangmania/" hreflang="en" aria-current=page>EN</a><a href="/ro/hangmania/" hreflang="ro">RO</a><a href="/fr/hangmania/" hreflang="fr">FR</a><a href="/es/hangmania/" hreflang="es">ES</a><a href="/de/hangmania/" hreflang="de">DE</a><a href="/it/hangmania/" hreflang="it">IT</a><a href="/pt/hangmania/" hreflang="pt">PT</a></nav>
+  <header>
+    <img src="/play/img/icon.png" alt="" width="96" height="96">
+    <h1>Hangmania</h1>
+    <p class="lede">The classic word-guessing game, reinvented. Guess the word before the man is hanged, beat your friends on the leaderboard, play every day and unlock achievements — in 7 languages.</p>
+    <div class="cta">
+      <a href="https://apps.apple.com/app/id6795192012" target="_blank" rel="noopener">App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.fabianmorar.hangman" target="_blank" rel="noopener">Google Play</a>
+      <a class="gold" href="/play/?lang=en">Play in your browser</a>
+    </div>
+  </header>
+
+  <section><h2>Game Modes</h2><ul class="list"><li><span class="ico">🎯</span><span><b>Classic</b><br>Guess the word before 6 mistakes.</span></li><li><span class="ico">💀</span><span><b>Killer</b><br>Hang the man before the word is revealed.</span></li><li><span class="ico">📅</span><span><b>Daily Word</b><br>One word per day for everyone.</span></li><li><span class="ico">🏆</span><span><b>Weekly Challenge</b><br>The same words for everyone, 6 days a week, live leaderboard and big XP at the end.</span></li><li><span class="ico">⏱️</span><span><b>Time Attack</b><br>Score as many words as you can before time runs out.</span></li><li><span class="ico">♾️</span><span><b>Survival</b> <span class="soon">Coming soon</span><br>One hangman for the whole run: 6 mistakes in total. How many words can you guess?</span></li><li><span class="ico">🔀</span><span><b>Anagram</b><br>Unscramble the letters into the hidden word.</span></li><li><span class="ico">📦</span><span><b>Word Packs</b><br>Themed word lists (5 free, rest Premium).</span></li><li><span class="ico">👥</span><span><b>Pass &amp; Play</b><br>Party mode, everyone on one phone.</span></li><li><span class="ico">🌐</span><span><b>Party Online</b><br>Same party mode, everyone on their own phone.</span></li></ul></section>
+  <section><h2>In the App</h2><ul class="list"><li><span class="ico">🎯</span><span><b>Daily Missions</b> <span class="soon">Coming soon</span><br>3 new missions every day, +50 XP each and a +100 XP bonus for finishing all of them.</span></li><li><span class="ico">📊</span><span><b>Leaderboard</b><br>See how you stack up against other players, globally.</span></li><li><span class="ico">🤝</span><span><b>Friends</b><br>Add friends, see their scores and invite them to a Party Online room.</span></li><li><span class="ico">🏅</span><span><b>Achievements</b><br>Unlock badges as you play.</span></li><li><span class="ico">🔥</span><span><b>Daily streak</b><br>Play every day to build your streak and earn bonuses.</span></li><li><span class="ico">📴</span><span><b>Offline play</b><br>Classic, Killer, Anagram and Survival work without a connection.</span></li><li><span class="ico">🌍</span><span><b>7 languages</b><br>English, Romanian, French, Spanish, German, Italian and Portuguese.</span></li></ul></section>
+  <section><h2>Difficulty</h2><p class="note" style="margin:0 0 12px">Easy has everyday words, Expert has the rarest ones.</p><div class="levels"><div class="lvl easy"><b>Easy</b><small>everyday words</small></div><div class="lvl medium"><b>Medium</b><small>familiar words</small></div><div class="lvl hard"><b>Hard</b><small>less common words</small></div><div class="lvl expert"><b>Expert</b><small>rare words</small></div></div></section>
+  <section><h2>Scoring</h2><div class="scores"><div class="score"><h3>Classic Scoring</h3><table><tr><td>Correct letter</td><td>+5 pts</td></tr><tr><td>Wrong guess</td><td>-2 pts</td></tr><tr><td>Word completed</td><td>+20–50 pts</td></tr></table><p class="note">The word bonus grows with difficulty: Easy +20, Medium +30, Hard +40, Expert +50. Word Packs give +20.</p></div><div class="score"><h3>Killer Scoring</h3><table><tr><td>Wrong guess (good!)</td><td>+3 pts</td></tr><tr><td>Correct guess (bad!)</td><td>-1 pts</td></tr><tr><td>Man hanged</td><td>+5–20 pts</td></tr></table><p class="note">The hanged-man bonus grows with difficulty: Easy +5, Medium +10, Hard +15, Expert +20.</p></div><div class="score"><h3>Daily Word Scoring</h3><table><tr><td>Correct letter</td><td>+10 pts</td></tr><tr><td>Wrong guess</td><td>-5 pts</td></tr><tr><td>Word completed</td><td>+50 pts</td></tr></table></div><div class="score"><h3>Time Attack Scoring</h3><table><tr><td>Correct letter</td><td>+5 pts</td></tr><tr><td>Wrong guess</td><td>-2 pts</td></tr><tr><td>Word completed</td><td>+20 pts</td></tr></table><p class="note">Same scoring as Classic — see how many words you can score before time runs out.</p></div><div class="score"><h3>Survival Scoring <span class="soon">Coming soon</span></h3><p class="note">Same scoring as Classic for every word you guess, and the word bonus grows with the run&#x27;s level (+20 up to +50). Mistakes add up across the whole run — after 6, the man is hanged. Your record (words guessed) shows on your Profile.</p></div><div class="score"><h3>Anagram Scoring</h3><p class="note">Word solved: 12 points on Easy, 22 on Medium, 32 on Hard, 42 on Expert, plus 5 points per letter. Each wrong attempt takes 10% off (down to 25% at most). Hints don&#x27;t cost points.</p></div><div class="score"><h3>Word Packs</h3><p class="note">Word Packs uses the same scoring as Classic — just with a themed word list.</p></div><div class="score"><h3>Weekly Challenge — Scoring</h3><p class="note">Correct letter: up to 90 points, split across however many letters you still need to find. Mistake: -10 points. Word completed: +50 bonus points. Sundays are a rest day with no competition.</p></div><div class="score"><h3>Daily Missions <span class="soon">Coming soon</span></h3><p class="note">+50 XP for each mission you finish and a +100 XP bonus for finishing all 3 on the same day. New missions at midnight (UTC).</p></div></div></section>
+  <section><h2>Word packs</h2><p class="note" style="margin:0 0 12px">5 packs are free for everyone; the other 8 come with Premium.</p><ul class="grid"><li><span>🐾 Animals</span><span class="tag free">Free</span></li><li><span>🌍 Countries</span><span class="tag free">Free</span></li><li><span>🍔 Food</span><span class="tag free">Free</span></li><li><span>🏷️ Brands</span><span class="tag free">Free</span></li><li><span>🏙️ Cities</span><span class="tag free">Free</span></li><li><span>🚗 Cars</span><span class="tag prem">Premium</span></li><li><span>🎬 Movies</span><span class="tag prem">Premium</span></li><li><span>🏀 Sports</span><span class="tag prem">Premium</span></li><li><span>🚀 Space</span><span class="tag prem">Premium</span></li><li><span>🦸 Superheroes</span><span class="tag prem">Premium</span></li><li><span>🎤 Musicians</span><span class="tag prem">Premium</span></li><li><span>🔬 Scientists</span><span class="tag prem">Premium</span></li><li><span>🦖 Dinosaurs</span><span class="tag prem">Premium</span></li></ul></section>
+  <section><h2>Ranks</h2><p class="note" style="margin:0 0 12px">Your rank climbs automatically as your score grows.</p><ul class="grid ranks"><li><span>Newbie</span><span>0 pts</span></li><li><span>Rookie</span><span>100 pts</span></li><li><span>Apprentice</span><span>250 pts</span></li><li><span>Solver</span><span>500 pts</span></li><li><span>Word Hunter</span><span>900 pts</span></li><li><span>Detective</span><span>1 500 pts</span></li><li><span>Wordsmith</span><span>2 500 pts</span></li><li><span>Puzzle Breaker</span><span>4 000 pts</span></li><li><span>Master</span><span>6 500 pts</span></li><li><span>Grandmaster</span><span>10 000 pts</span></li><li><span>Codebreaker</span><span>15 000 pts</span></li><li><span>Vocabulist</span><span>22 000 pts</span></li><li><span>Legend</span><span>32 000 pts</span></li><li><span>Hangman King</span><span>45 000 pts</span></li><li><span>Emperor</span><span>65 000 pts</span></li><li><span>Titan</span><span>90 000 pts</span></li><li><span>Mythic</span><span>125 000 pts</span></li><li><span>Immortal</span><span>170 000 pts</span></li><li><span>Oracle</span><span>230 000 pts</span></li><li><span>Overlord</span><span>310 000 pts</span></li><li><span>Hangmania Elite</span><span>420 000 pts</span></li><li><span>Hangmania Master</span><span>570 000 pts</span></li><li><span>Hangmania Legend</span><span>770 000 pts</span></li><li><span>King of Hangmania</span><span>1 000 000 pts</span></li></ul></section>
+  <section><h2>⭐ Premium</h2><p style="color:var(--sub)">No ads, 2 hints every game, a leaderboard badge, 8 exclusive word packs, the Daily Word archive and Weekly Challenge catch-up.</p></section>
+
+  <footer>
+    <p>Questions or ideas? Write to us at <a href="mailto:fbcenterofficial@gmail.com">fbcenterofficial@gmail.com</a></p>
+    <p><a href="/hangman-privacy-policy/">Privacy Policy</a> · <a href="/hangman-privacy-policy/terms-of-service.html">Terms of Use</a> · <a href="/hangman-privacy-policy/support.html">Support</a> · <a href="/">FB Center</a></p>
+  </footer>
+</div>
+</body>
+</html>

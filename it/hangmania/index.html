@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hangmania — tutto sul gioco</title>
+<meta name="description" content="Tutto su Hangmania: modalità di gioco, punteggio, difficoltà, pacchetti di parole, gradi, Premium e altro.">
+<link rel="canonical" href="https://fb-center.com/it/hangmania/">
+<link rel="alternate" hreflang="en" href="https://fb-center.com/hangmania/"><link rel="alternate" hreflang="ro" href="https://fb-center.com/ro/hangmania/"><link rel="alternate" hreflang="fr" href="https://fb-center.com/fr/hangmania/"><link rel="alternate" hreflang="es" href="https://fb-center.com/es/hangmania/"><link rel="alternate" hreflang="de" href="https://fb-center.com/de/hangmania/"><link rel="alternate" hreflang="it" href="https://fb-center.com/it/hangmania/"><link rel="alternate" hreflang="pt" href="https://fb-center.com/pt/hangmania/">
+<link rel="icon" href="/play/img/icon.png">
+<meta name="theme-color" content="#0B2C6B">
+<meta property="og:title" content="Hangmania — tutto sul gioco">
+<meta property="og:description" content="Tutto su Hangmania: modalità di gioco, punteggio, difficoltà, pacchetti di parole, gradi, Premium e altro.">
+<meta property="og:image" content="https://fb-center.com/play/img/icon.png">
+<style>
+  :root { --navy: #0B2C6B; --gold: #E8B84B; --line: #DDE3EC; --muted: #8899AA; --sub: #5B6B8C; color-scheme: light; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: #EAEFF9; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--navy);
+          background: linear-gradient(180deg, #EAEFF9 0%, #E5EAF6 55%, #DCE4F5 100%) fixed; line-height: 1.5; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: max(16px, env(safe-area-inset-top)) 16px 40px; }
+  .langs { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+  .langs a { text-decoration: none; color: var(--sub); font-size: 13px; font-weight: 700; border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 4px 10px; }
+  .langs a[aria-current] { background: var(--navy); color: #fff; border-color: var(--navy); }
+  header { text-align: center; padding: 22px 0 8px; }
+  header img { border-radius: 22px; box-shadow: 0 8px 24px rgba(11,44,107,.18); }
+  h1 { font-size: 36px; margin-top: 12px; }
+  .lede { color: var(--sub); font-size: 17px; max-width: 560px; margin: 8px auto 0; }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 18px; }
+  .cta a { text-decoration: none; font-weight: 700; font-size: 15px; border-radius: 14px; padding: 11px 16px; background: var(--navy); color: #fff; }
+  .cta a.gold { background: var(--gold); color: var(--navy); }
+  section { background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 20px; margin-top: 18px; }
+  h2 { font-size: 22px; margin-bottom: 12px; }
+  ul.list { list-style: none; display: grid; gap: 12px; }
+  ul.list li { display: flex; gap: 12px; align-items: flex-start; color: var(--sub); font-size: 15px; }
+  ul.list b { color: var(--navy); font-size: 16px; }
+  .ico { font-size: 22px; line-height: 1.2; width: 28px; text-align: center; flex: none; }
+  .soon { display: inline-block; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .03em; background: #FFF1CC; color: #8A6410; border-radius: 8px; padding: 1px 7px; margin-left: 4px; vertical-align: 2px; }
+  .scores { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .score { border: 1px solid var(--line); border-radius: 16px; padding: 14px; background: #FAFBFE; }
+  .score h3 { font-size: 16px; margin-bottom: 6px; }
+  .score table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .score td { padding: 5px 0; border-top: 1px solid #EEF1F6; color: var(--sub); }
+  .score tr:first-child td { border-top: 0; }
+  .score td:last-child { text-align: right; font-weight: 800; color: var(--navy); white-space: nowrap; }
+  .note { color: var(--sub); font-size: 13.5px; margin-top: 6px; }
+  .levels { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .lvl { border-radius: 16px; padding: 12px; text-align: center; color: #fff; display: flex; flex-direction: column; }
+  .lvl small { opacity: .9; }
+  .lvl.easy { background: #2E9E6B; } .lvl.medium { background: #0B2C6B; } .lvl.hard { background: #E8B84B; color: #0B2C6B; } .lvl.expert { background: #D64545; }
+  ul.grid { list-style: none; display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  ul.grid li { display: flex; justify-content: space-between; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; font-size: 14.5px; }
+  .tag { font-size: 11px; font-weight: 800; border-radius: 8px; padding: 2px 7px; }
+  .tag.free { background: #DDF3E8; color: #1E6B48; } .tag.prem { background: #FFF1CC; color: #8A6410; }
+  ul.ranks li span:last-child { color: var(--muted); font-size: 13px; white-space: nowrap; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 26px; }
+  footer a { color: var(--muted); }
+  footer p + p { margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="langs" aria-label="Language"><a href="/hangmania/" hreflang="en">EN</a><a href="/ro/hangmania/" hreflang="ro">RO</a><a href="/fr/hangmania/" hreflang="fr">FR</a><a href="/es/hangmania/" hreflang="es">ES</a><a href="/de/hangmania/" hreflang="de">DE</a><a href="/it/hangmania/" hreflang="it" aria-current=page>IT</a><a href="/pt/hangmania/" hreflang="pt">PT</a></nav>
+  <header>
+    <img src="/play/img/icon.png" alt="" width="96" height="96">
+    <h1>Hangmania</h1>
+    <p class="lede">Il classico gioco per indovinare parole, reinventato. Indovina la parola prima che l&#x27;omino venga impiccato, batti i tuoi amici in classifica, gioca ogni giorno e sblocca obiettivi — in 7 lingue.</p>
+    <div class="cta">
+      <a href="https://apps.apple.com/app/id6795192012" target="_blank" rel="noopener">App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.fabianmorar.hangman" target="_blank" rel="noopener">Google Play</a>
+      <a class="gold" href="/play/?lang=it">Gioca nel browser</a>
+    </div>
+  </header>
+
+  <section><h2>Modalità di Gioco</h2><ul class="list"><li><span class="ico">🎯</span><span><b>Classic</b><br>Indovina la parola prima di 6 errori.</span></li><li><span class="ico">💀</span><span><b>Killer</b><br>Impicca l&#x27;uomo prima che la parola venga rivelata.</span></li><li><span class="ico">📅</span><span><b>Daily Word</b><br>Una parola al giorno per tutti.</span></li><li><span class="ico">🏆</span><span><b>Weekly Challenge</b><br>Le stesse parole per tutti, 6 giorni a settimana, classifica live e tanto XP alla fine.</span></li><li><span class="ico">⏱️</span><span><b>Time Attack</b><br>Segna più parole possibili prima che il tempo scada.</span></li><li><span class="ico">♾️</span><span><b>Survival</b> <span class="soon">In arrivo</span><br>Un solo impiccato per tutta la partita: 6 errori in totale. Quante parole riesci a indovinare?</span></li><li><span class="ico">🔀</span><span><b>Anagramma</b><br>Riordina le lettere mescolate per trovare la parola nascosta.</span></li><li><span class="ico">📦</span><span><b>Word Packs</b><br>Liste di parole a tema (5 gratuite, il resto Premium).</span></li><li><span class="ico">👥</span><span><b>Pass &amp; Play</b><br>Modalità festa, tutti su un telefono.</span></li><li><span class="ico">🌐</span><span><b>Party Online</b><br>Stessa modalità festa, ognuno sul proprio telefono.</span></li></ul></section>
+  <section><h2>Nell&#x27;app</h2><ul class="list"><li><span class="ico">🎯</span><span><b>Missioni giornaliere</b> <span class="soon">In arrivo</span><br>3 nuove missioni ogni giorno, +50 XP ciascuna e +100 XP bonus se le completi tutte.</span></li><li><span class="ico">📊</span><span><b>Classifica</b><br>Scopri come ti posizioni rispetto agli altri giocatori, a livello globale.</span></li><li><span class="ico">🤝</span><span><b>Amici</b><br>Aggiungi amici, guarda i loro punteggi e invitali in una stanza Party Online.</span></li><li><span class="ico">🏅</span><span><b>Obiettivi</b><br>Sblocca distintivi giocando.</span></li><li><span class="ico">🔥</span><span><b>Serie giornaliera</b><br>Gioca ogni giorno per aumentare la tua serie e ottenere bonus.</span></li><li><span class="ico">📴</span><span><b>Offline</b><br>Classica, Killer, Anagramma e Survival funzionano senza connessione.</span></li><li><span class="ico">🌍</span><span><b>7 lingue</b><br>Italiano, inglese, rumeno, francese, spagnolo, tedesco e portoghese.</span></li></ul></section>
+  <section><h2>Difficoltà</h2><p class="note" style="margin:0 0 12px">Facile ha parole di tutti i giorni, Esperto le più rare.</p><div class="levels"><div class="lvl easy"><b>Facile</b><small>parole di tutti i giorni</small></div><div class="lvl medium"><b>Medio</b><small>parole conosciute</small></div><div class="lvl hard"><b>Difficile</b><small>parole meno comuni</small></div><div class="lvl expert"><b>Esperto</b><small>parole rare</small></div></div></section>
+  <section><h2>Punteggio</h2><div class="scores"><div class="score"><h3>Classic — Punteggio</h3><table><tr><td>Lettera corretta</td><td>+5 pt</td></tr><tr><td>Errore</td><td>-2 pt</td></tr><tr><td>Parola completata</td><td>+20–50 pt</td></tr></table><p class="note">Il bonus per parola cresce con la difficoltà: Facile +20, Medio +30, Difficile +40, Esperto +50. I pacchetti di parole danno +20.</p></div><div class="score"><h3>Killer — Punteggio</h3><table><tr><td>Errore (bene!)</td><td>+3 pt</td></tr><tr><td>Risposta corretta (male!)</td><td>-1 pt</td></tr><tr><td>Uomo impiccato</td><td>+5–20 pt</td></tr></table><p class="note">Il bonus per l&#x27;omino impiccato cresce con la difficoltà: Facile +5, Medio +10, Difficile +15, Esperto +20.</p></div><div class="score"><h3>Daily Word — Punteggio</h3><table><tr><td>Lettera corretta</td><td>+10 pt</td></tr><tr><td>Errore</td><td>-5 pt</td></tr><tr><td>Parola completata</td><td>+50 pt</td></tr></table></div><div class="score"><h3>Time Attack — Punteggio</h3><table><tr><td>Lettera corretta</td><td>+5 pt</td></tr><tr><td>Errore</td><td>-2 pt</td></tr><tr><td>Parola completata</td><td>+20 pt</td></tr></table><p class="note">Stesso punteggio di Classic — vedi quante parole riesci a segnare prima che il tempo scada.</p></div><div class="score"><h3>Punteggio Survival <span class="soon">In arrivo</span></h3><p class="note">Lo stesso punteggio della modalità Classica per ogni parola indovinata, e il bonus per parola cresce con il livello della partita (da +20 a +50). Gli errori si sommano per tutta la partita — dopo 6, l&#x27;omino viene impiccato. Il tuo record (parole indovinate) appare nel profilo.</p></div><div class="score"><h3>Punteggio Anagramma</h3><p class="note">Parola risolta: 12 punti a Facile, 22 a Medio, 32 a Difficile, 42 a Esperto, più 5 punti per lettera. Ogni tentativo sbagliato toglie il 10% (fino a un minimo del 25%). I suggerimenti non costano punti.</p></div><div class="score"><h3>Word Packs</h3><p class="note">Word Packs usa lo stesso punteggio di Classic — solo con una lista di parole a tema.</p></div><div class="score"><h3>Weekly Challenge — Punteggio</h3><p class="note">Lettera corretta: fino a 90 punti, divisi in base a quante lettere ti mancano ancora. Errore: -10 punti. Parola completata: +50 punti bonus. La domenica è giorno di riposo, senza competizione.</p></div><div class="score"><h3>Missioni giornaliere <span class="soon">In arrivo</span></h3><p class="note">+50 XP per ogni missione completata e +100 XP bonus se completi tutte e 3 nello stesso giorno. Nuove missioni a mezzanotte (UTC).</p></div></div></section>
+  <section><h2>Pacchetti di parole</h2><p class="note" style="margin:0 0 12px">5 pacchetti sono gratis per tutti; gli altri 8 sono inclusi in Premium.</p><ul class="grid"><li><span>🐾 Animali</span><span class="tag free">Gratis</span></li><li><span>🌍 Paesi</span><span class="tag free">Gratis</span></li><li><span>🍔 Cibo</span><span class="tag free">Gratis</span></li><li><span>🏷️ Marchi</span><span class="tag free">Gratis</span></li><li><span>🏙️ Città</span><span class="tag free">Gratis</span></li><li><span>🚗 Auto</span><span class="tag prem">Premium</span></li><li><span>🎬 Film</span><span class="tag prem">Premium</span></li><li><span>🏀 Sport</span><span class="tag prem">Premium</span></li><li><span>🚀 Spazio</span><span class="tag prem">Premium</span></li><li><span>🦸 Supereroi</span><span class="tag prem">Premium</span></li><li><span>🎤 Musicisti</span><span class="tag prem">Premium</span></li><li><span>🔬 Scienziati</span><span class="tag prem">Premium</span></li><li><span>🦖 Dinosauri</span><span class="tag prem">Premium</span></li></ul></section>
+  <section><h2>Ranghi</h2><p class="note" style="margin:0 0 12px">Il tuo rango sale automaticamente man mano che il tuo punteggio cresce.</p><ul class="grid ranks"><li><span>Newbie</span><span>0 pt</span></li><li><span>Rookie</span><span>100 pt</span></li><li><span>Apprentice</span><span>250 pt</span></li><li><span>Solver</span><span>500 pt</span></li><li><span>Word Hunter</span><span>900 pt</span></li><li><span>Detective</span><span>1 500 pt</span></li><li><span>Wordsmith</span><span>2 500 pt</span></li><li><span>Puzzle Breaker</span><span>4 000 pt</span></li><li><span>Master</span><span>6 500 pt</span></li><li><span>Grandmaster</span><span>10 000 pt</span></li><li><span>Codebreaker</span><span>15 000 pt</span></li><li><span>Vocabulist</span><span>22 000 pt</span></li><li><span>Legend</span><span>32 000 pt</span></li><li><span>Hangman King</span><span>45 000 pt</span></li><li><span>Emperor</span><span>65 000 pt</span></li><li><span>Titan</span><span>90 000 pt</span></li><li><span>Mythic</span><span>125 000 pt</span></li><li><span>Immortal</span><span>170 000 pt</span></li><li><span>Oracle</span><span>230 000 pt</span></li><li><span>Overlord</span><span>310 000 pt</span></li><li><span>Hangmania Elite</span><span>420 000 pt</span></li><li><span>Hangmania Master</span><span>570 000 pt</span></li><li><span>Hangmania Legend</span><span>770 000 pt</span></li><li><span>King of Hangmania</span><span>1 000 000 pt</span></li></ul></section>
+  <section><h2>⭐ Premium</h2><p style="color:var(--sub)">Niente pubblicità, 2 suggerimenti a ogni partita, un badge in classifica, 8 pacchetti di parole esclusivi, l&#x27;archivio della Parola del giorno e il recupero dei giorni persi della Weekly Challenge.</p></section>
+
+  <footer>
+    <p>Domande o idee? Scrivici a <a href="mailto:fbcenterofficial@gmail.com">fbcenterofficial@gmail.com</a></p>
+    <p><a href="/it/hangman-privacy-policy/">Informativa sulla privacy</a> · <a href="/it/hangman-privacy-policy/terms-of-service.html">Termini d&#x27;uso</a> · <a href="/it/hangman-privacy-policy/support.html">Assistenza</a> · <a href="/it">FB Center</a></p>
+  </footer>
+</div>
+</body>
+</html>

@@ -69,9 +69,8 @@ main { max-width: 640px; margin: 0 auto; padding: 0 16px; }
 .getapp img { border-radius: 13px; flex: none; }
 .getapp p { color: var(--sub); font-size: 14px; line-height: 1.45; }
 .stores { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.stores a.about { background: var(--gold); color: var(--navy); }
 .stores a { background: var(--navy); color: #fff; text-decoration: none; font-weight: 700; font-size: 14px; border-radius: 12px; padding: 9px 14px; }
-.how p { color: var(--sub); font-size: 14px; line-height: 1.55; margin-top: 8px; }
-.how b { color: var(--navy); }
 .foot { text-align: center; color: var(--muted); font-size: 13px; padding: 22px 0 6px; }
 .foot a { color: var(--muted); }
 .ad-wrap { margin-top: 16px; text-align: center; min-height: 0; }

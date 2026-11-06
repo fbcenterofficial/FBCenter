@@ -72,17 +72,13 @@ var I18N = {
   "saveFailed": "Couldn't save your points. Check your connection.",
   "lbEmpty": "No players yet.",
   "getApp": "Get the app",
-  "getAppDesc": "Survival, Time Attack, Anagram, Party Online with friends, daily missions, 72 achievements and 16 word packs.",
-  "howTitle": "How to play",
-  "how1": "<b>Classic:</b> the first letter is shown. Guess the rest one letter at a time — each right letter is worth 5 points, each wrong one costs 2 and adds a piece to the gallows. Six mistakes and the man is hanged. Finish the word for a bonus of 20 to 50 points, depending on the difficulty.",
-  "how2": "<b>Killer:</b> the rules flipped. You want the man hanged: every wrong letter is worth 3 points, and if the whole word gets revealed first, he escapes. Hang him for a bonus of 5 to 20 points.",
-  "how3": "<b>Daily Word:</b> one word a day, the same for every player in your language. Each right letter is worth 10 points, and solving it gives 50 more and keeps your streak going.",
-  "how4": "Difficulty depends on how common the words are: Easy uses everyday words, Expert the rarest ones. Accents don't matter — typing A also reveals Ă, Â or À.",
+  "getAppDesc": "Time Attack, Anagram, the Weekly Challenge, word packs, achievements and online games with friends.",
   "privacy": "Privacy",
   "terms": "Terms",
   "language": "Language",
   "close": "Close",
-  "premiumThanks": "⭐ Premium — no ads"
+  "premiumThanks": "⭐ Premium — no ads",
+  "aboutGame": "About the game"
  },
  "ro": {
   "CongratulationsTitle": "Felicitări!",
@@ -156,17 +152,13 @@ var I18N = {
   "saveFailed": "Nu ți-am putut salva punctele. Verifică conexiunea.",
   "lbEmpty": "Încă nu sunt jucători.",
   "getApp": "Descarcă aplicația",
-  "getAppDesc": "Survival, Time Attack, Anagrame, Party Online cu prietenii, misiuni zilnice, 72 de realizări și 16 pachete de cuvinte.",
-  "howTitle": "Cum se joacă",
-  "how1": "<b>Classic:</b> prima literă e afișată. Ghicește restul literă cu literă — fiecare literă corectă valorează 5 puncte, fiecare greșeală costă 2 și adaugă o bucată la spânzurătoare. La 6 greșeli omul e spânzurat. Termină cuvântul pentru un bonus de 20–50 de puncte, în funcție de dificultate.",
-  "how2": "<b>Killer:</b> regulile sunt inversate. Vrei ca omul să fie spânzurat: fiecare literă greșită valorează 3 puncte, iar dacă tot cuvântul e dezvăluit înainte, omul scapă. Spânzură-l pentru un bonus de 5–20 de puncte.",
-  "how3": "<b>Cuvântul zilei:</b> un cuvânt pe zi, același pentru toți jucătorii din limba ta. Fiecare literă corectă valorează 10 puncte, iar dacă îl rezolvi primești încă 50 și îți continui seria.",
-  "how4": "Dificultatea ține de cât de cunoscute sunt cuvintele: Ușor are cuvinte de zi cu zi, Expert pe cele mai rare. Diacriticele nu contează — dacă scrii A se dezvăluie și Ă sau Â.",
+  "getAppDesc": "Time Attack, Anagrame, Provocarea săptămânii, pachete de cuvinte, realizări și jocuri online cu prietenii.",
   "privacy": "Confidențialitate",
   "terms": "Termeni",
   "language": "Limbă",
   "close": "Închide",
-  "premiumThanks": "⭐ Premium — fără reclame"
+  "premiumThanks": "⭐ Premium — fără reclame",
+  "aboutGame": "Despre joc"
  },
  "fr": {
   "CongratulationsTitle": "Félicitations !",
@@ -240,17 +232,13 @@ var I18N = {
   "saveFailed": "Impossible d'enregistrer tes points. Vérifie ta connexion.",
   "lbEmpty": "Pas encore de joueurs.",
   "getApp": "Télécharger l'app",
-  "getAppDesc": "Survie, Contre-la-montre, Anagrammes, Party Online entre amis, missions quotidiennes, 72 succès et 16 packs de mots.",
-  "howTitle": "Comment jouer",
-  "how1": "<b>Classique :</b> la première lettre est affichée. Devine le reste lettre par lettre — chaque bonne lettre vaut 5 points, chaque erreur en coûte 2 et ajoute un morceau à la potence. Six erreurs et le bonhomme est pendu. Termine le mot pour un bonus de 20 à 50 points selon la difficulté.",
-  "how2": "<b>Killer :</b> les règles sont inversées. Tu veux que le bonhomme soit pendu : chaque mauvaise lettre vaut 3 points, et si tout le mot est révélé avant, il s'échappe. Pends-le pour un bonus de 5 à 20 points.",
-  "how3": "<b>Mot du jour :</b> un mot par jour, le même pour tous les joueurs de ta langue. Chaque bonne lettre vaut 10 points, et le trouver en rapporte 50 de plus et prolonge ta série.",
-  "how4": "La difficulté dépend de la fréquence des mots : Facile utilise des mots courants, Expert les plus rares. Les accents ne comptent pas — taper E révèle aussi É, È ou Ê.",
+  "getAppDesc": "Contre-la-montre, Anagrammes, le Défi de la semaine, des packs de mots, des succès et des parties en ligne entre amis.",
   "privacy": "Confidentialité",
   "terms": "Conditions",
   "language": "Langue",
   "close": "Fermer",
-  "premiumThanks": "⭐ Premium — sans pub"
+  "premiumThanks": "⭐ Premium — sans pub",
+  "aboutGame": "À propos du jeu"
  },
  "es": {
   "CongratulationsTitle": "¡Felicidades!",
@@ -324,17 +312,13 @@ var I18N = {
   "saveFailed": "No se pudieron guardar tus puntos. Revisa tu conexión.",
   "lbEmpty": "Todavía no hay jugadores.",
   "getApp": "Descarga la app",
-  "getAppDesc": "Supervivencia, Contrarreloj, Anagramas, Party Online con amigos, misiones diarias, 72 logros y 16 paquetes de palabras.",
-  "howTitle": "Cómo se juega",
-  "how1": "<b>Clásico:</b> la primera letra se muestra. Adivina el resto letra a letra — cada acierto vale 5 puntos, cada fallo cuesta 2 y añade una parte a la horca. Con seis fallos, el muñeco queda ahorcado. Completa la palabra para un bonus de 20 a 50 puntos según la dificultad.",
-  "how2": "<b>Killer:</b> las reglas al revés. Quieres ahorcar al muñeco: cada letra fallada vale 3 puntos, y si la palabra entera se descubre antes, se escapa. Ahórcalo para un bonus de 5 a 20 puntos.",
-  "how3": "<b>Palabra del día:</b> una palabra al día, la misma para todos los jugadores de tu idioma. Cada acierto vale 10 puntos, y resolverla da 50 más y mantiene tu racha.",
-  "how4": "La dificultad depende de lo comunes que son las palabras: Fácil usa palabras cotidianas, Experto las más raras. Los acentos no importan — escribir A también descubre Á.",
+  "getAppDesc": "Contrarreloj, Anagramas, el Desafío semanal, paquetes de palabras, logros y partidas online con amigos.",
   "privacy": "Privacidad",
   "terms": "Términos",
   "language": "Idioma",
   "close": "Cerrar",
-  "premiumThanks": "⭐ Premium — sin anuncios"
+  "premiumThanks": "⭐ Premium — sin anuncios",
+  "aboutGame": "Sobre el juego"
  },
  "de": {
   "CongratulationsTitle": "Glückwunsch!",
@@ -408,17 +392,13 @@ var I18N = {
   "saveFailed": "Deine Punkte konnten nicht gespeichert werden. Prüfe deine Verbindung.",
   "lbEmpty": "Noch keine Spieler.",
   "getApp": "App herunterladen",
-  "getAppDesc": "Survival, Zeitangriff, Anagramme, Party Online mit Freunden, tägliche Missionen, 72 Erfolge und 16 Wortpakete.",
-  "howTitle": "So wird gespielt",
-  "how1": "<b>Klassisch:</b> Der erste Buchstabe ist sichtbar. Errate den Rest Buchstabe für Buchstabe — jeder richtige bringt 5 Punkte, jeder falsche kostet 2 und fügt dem Galgen ein Teil hinzu. Nach sechs Fehlern ist das Männchen gehängt. Löse das Wort für einen Bonus von 20 bis 50 Punkten, je nach Schwierigkeit.",
-  "how2": "<b>Killer:</b> Die Regeln umgedreht. Du willst das Männchen hängen: Jeder falsche Buchstabe bringt 3 Punkte, und wird das ganze Wort vorher aufgedeckt, entkommt es. Häng es für einen Bonus von 5 bis 20 Punkten.",
-  "how3": "<b>Wort des Tages:</b> ein Wort pro Tag, gleich für alle Spieler deiner Sprache. Jeder richtige Buchstabe bringt 10 Punkte, und die Lösung bringt 50 weitere und hält deine Serie am Leben.",
-  "how4": "Die Schwierigkeit hängt davon ab, wie gebräuchlich die Wörter sind: Leicht nutzt Alltagswörter, Experte die seltensten. Umlaute sind egal — ein A deckt auch Ä auf.",
+  "getAppDesc": "Zeitangriff, Anagramme, die Wochen-Challenge, Wortpakete, Erfolge und Online-Spiele mit Freunden.",
   "privacy": "Datenschutz",
   "terms": "Bedingungen",
   "language": "Sprache",
   "close": "Schließen",
-  "premiumThanks": "⭐ Premium — ohne Werbung"
+  "premiumThanks": "⭐ Premium — ohne Werbung",
+  "aboutGame": "Über das Spiel"
  },
  "it": {
   "CongratulationsTitle": "Congratulazioni!",
@@ -492,17 +472,13 @@ var I18N = {
   "saveFailed": "Impossibile salvare i tuoi punti. Controlla la connessione.",
   "lbEmpty": "Ancora nessun giocatore.",
   "getApp": "Scarica l'app",
-  "getAppDesc": "Sopravvivenza, A tempo, Anagrammi, Party Online con gli amici, missioni giornaliere, 72 obiettivi e 16 pacchetti di parole.",
-  "howTitle": "Come si gioca",
-  "how1": "<b>Classica:</b> la prima lettera è già scritta. Indovina il resto una lettera alla volta — ogni lettera giusta vale 5 punti, ogni errore ne costa 2 e aggiunge un pezzo alla forca. Con sei errori l'omino è impiccato. Completa la parola per un bonus da 20 a 50 punti, in base alla difficoltà.",
-  "how2": "<b>Killer:</b> le regole al contrario. Vuoi impiccare l'omino: ogni lettera sbagliata vale 3 punti, e se la parola viene svelata prima, scappa. Impiccalo per un bonus da 5 a 20 punti.",
-  "how3": "<b>Parola del giorno:</b> una parola al giorno, uguale per tutti i giocatori della tua lingua. Ogni lettera giusta vale 10 punti, e risolverla ne dà altri 50 e mantiene la tua serie.",
-  "how4": "La difficoltà dipende da quanto sono comuni le parole: Facile usa parole di tutti i giorni, Esperto le più rare. Gli accenti non contano — scrivere E svela anche È.",
+  "getAppDesc": "A tempo, Anagrammi, la Sfida settimanale, pacchetti di parole, obiettivi e partite online con gli amici.",
   "privacy": "Privacy",
   "terms": "Termini",
   "language": "Lingua",
   "close": "Chiudi",
-  "premiumThanks": "⭐ Premium — senza pubblicità"
+  "premiumThanks": "⭐ Premium — senza pubblicità",
+  "aboutGame": "Info sul gioco"
  },
  "pt": {
   "CongratulationsTitle": "Parabéns!",
@@ -576,16 +552,12 @@ var I18N = {
   "saveFailed": "Não foi possível salvar seus pontos. Verifique sua conexão.",
   "lbEmpty": "Ainda não há jogadores.",
   "getApp": "Baixe o app",
-  "getAppDesc": "Sobrevivência, Contra o tempo, Anagramas, Party Online com amigos, missões diárias, 72 conquistas e 16 pacotes de palavras.",
-  "howTitle": "Como jogar",
-  "how1": "<b>Clássico:</b> a primeira letra aparece. Adivinhe o resto letra por letra — cada acerto vale 5 pontos, cada erro custa 2 e adiciona uma parte à forca. Com seis erros, o boneco é enforcado. Complete a palavra para um bônus de 20 a 50 pontos, conforme a dificuldade.",
-  "how2": "<b>Killer:</b> as regras ao contrário. Você quer enforcar o boneco: cada letra errada vale 3 pontos, e se a palavra inteira for revelada antes, ele escapa. Enforque-o para um bônus de 5 a 20 pontos.",
-  "how3": "<b>Palavra do dia:</b> uma palavra por dia, a mesma para todos os jogadores do seu idioma. Cada acerto vale 10 pontos, e resolvê-la dá mais 50 e mantém sua sequência.",
-  "how4": "A dificuldade depende de quão comuns são as palavras: Fácil usa palavras do dia a dia, Especialista as mais raras. Acentos não importam — digitar A também revela Á, Ã ou Â.",
+  "getAppDesc": "Contra o tempo, Anagramas, o Desafio semanal, pacotes de palavras, conquistas e partidas online com amigos.",
   "privacy": "Privacidade",
   "terms": "Termos",
   "language": "Idioma",
   "close": "Fechar",
-  "premiumThanks": "⭐ Premium — sem anúncios"
+  "premiumThanks": "⭐ Premium — sem anúncios",
+  "aboutGame": "Sobre o jogo"
  }
 };

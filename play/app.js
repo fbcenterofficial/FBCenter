@@ -226,7 +226,7 @@
   function logout() {
     if (S && S.access) fetch(SB + "/auth/v1/logout", { method: "POST", headers: { "apikey": KEY, "Authorization": "Bearer " + S.access } }).catch(function () { });
     S = null; saveS();
-    renderHome(); renderAccount();
+    renderHome(); renderAccount(); loadLeaderboard();
   }
 
   // ── Guest progress (this browser only) ────────────────────────────────────
@@ -612,6 +612,8 @@
   }
 
   function loadLeaderboard() {
+    $("lbCard").hidden = !S;
+    if (!S) return;
     api("GET", "/rest/v1/Users?select=Username,Score,Premium&HiddenFromLeaderboard=eq.false&order=Score.desc&limit=10", null, { anon: true })
       .then(function (rows) {
         var me = S && S.username;
@@ -708,8 +710,8 @@
     $("lbTitle").textContent = "🏆 " + t("LeaderboardTitle");
     $("getApp").textContent = t("getApp");
     $("getAppDesc").textContent = t("getAppDesc");
-    $("howTitle").textContent = t("howTitle");
-    ["how1", "how2", "how3", "how4"].forEach(function (k) { $(k).innerHTML = t(k); }); // our own texts, with <b>
+    $("aboutLink").textContent = t("aboutGame");
+    $("aboutLink").href = (lang === "en" ? "" : "/" + lang) + "/hangmania/";
     var legal = lang === "en" ? "/hangman-privacy-policy/" : "/" + lang + "/hangman-privacy-policy/";
     $("fPrivacy").textContent = t("privacy");
     $("fPrivacy").href = legal;
