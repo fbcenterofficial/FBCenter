@@ -624,9 +624,18 @@
     $("dailyTag").textContent = tag;
   }
 
+  // Guests see the leaderboard locked: grey placeholder rows (no real names) and a login button.
   function loadLeaderboard() {
-    $("lbCard").hidden = !S;
-    if (!S) return;
+    var card = $("lbCard");
+    card.hidden = false;
+    card.classList.toggle("locked", !S);
+    if (!S) {
+      var rows = "";
+      for (var i = 0; i < 6; i++) rows += '<li><span class="rk">' + (i + 1) + '</span><span class="nm"><i style="width:' + (40 + (i * 37) % 45) + '%"></i></span><span class="sc"><i></i></span></li>';
+      $("lbList").innerHTML = rows;
+      $("lbLock").textContent = "🔒 " + t("lbLogin");
+      return;
+    }
     api("GET", "/rest/v1/Users?select=Username,Score,Premium&HiddenFromLeaderboard=eq.false&order=Score.desc&limit=10", null, { anon: true })
       .then(function (rows) {
         var me = S && S.username;
@@ -655,6 +664,7 @@
   $("authClose").addEventListener("click", closeAuth);
   $("auth").addEventListener("click", function (e) { if (e.target === $("auth")) closeAuth(); });
   $("acct").addEventListener("click", function () { openAuth(S ? "fMe" : "fLogin"); });
+  $("lbLock").addEventListener("click", function () { openAuth("fLogin"); });
   $("logout").addEventListener("click", function () { logout(); closeAuth(); });
   document.querySelectorAll("[data-swap]").forEach(function (a) {
     a.addEventListener("click", function (e) { e.preventDefault(); openAuth(a.getAttribute("data-swap")); });
@@ -753,6 +763,7 @@
     store("hm_lang", lang);
     applyTexts();
     route(); // a game in progress restarts in the new language
+    loadLeaderboard();
   });
 
   // ── Start ─────────────────────────────────────────────────────────────────

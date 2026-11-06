@@ -65,6 +65,15 @@ main { max-width: 640px; margin: 0 auto; padding: 0 16px; }
 .lb .sc { font-weight: 800; }
 .lb li.me { background: #FFF8E6; border-radius: 10px; }
 .lb .empty { color: var(--muted); }
+.lb-body { position: relative; }
+.lb-lock { display: none; }
+.lb.locked .lb-lock { display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+                      border: 0; border-radius: 14px; background: var(--navy); color: #fff; font-weight: 700; font-size: 15px;
+                      padding: 12px 18px; box-shadow: 0 6px 18px rgba(11, 44, 107, .25); white-space: nowrap; }
+.lb.locked li { color: transparent; }
+.lb.locked .rk { color: #C9D1DE; }
+.lb.locked i { display: block; height: 12px; border-radius: 6px; background: #E6EAF2; }
+.lb.locked .sc i { width: 48px; }
 .getapp { display: flex; gap: 14px; align-items: flex-start; }
 .getapp img { border-radius: 13px; flex: none; }
 .getapp p { color: var(--sub); font-size: 14px; line-height: 1.45; }

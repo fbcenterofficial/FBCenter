@@ -16,7 +16,7 @@
 <meta property="og:url" content="https://fb-center.com/play/">
 <meta property="og:image" content="https://fb-center.com/play/img/icon.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Hangmania","url":"https://fb-center.com/play/","genre":"Word game","gamePlatform":["Web browser","iOS","Android"],"inLanguage":["en","ro","fr","es","de","it","pt"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"author":{"@type":"Organization","name":"FB Center","url":"https://fb-center.com"}}</script>
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <header class="bar">
@@ -55,9 +55,12 @@
 
     <div class="ad-wrap" id="adHome"></div>
 
-    <div class="card lb" id="lbCard" hidden>
+    <div class="card lb" id="lbCard">
       <h2 id="lbTitle"></h2>
-      <ol id="lbList"></ol>
+      <div class="lb-body">
+        <ol id="lbList"></ol>
+        <button type="button" class="lb-lock" id="lbLock"></button>
+      </div>
     </div>
 
     <div class="card getapp">
@@ -166,8 +169,8 @@
 
 <div class="toast" id="toast" hidden></div>
 
-<script src="i18n.js?v=3"></script>
-<script src="daily.js?v=3"></script>
-<script src="app.js?v=3"></script>
+<script src="i18n.js?v=4"></script>
+<script src="daily.js?v=4"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>

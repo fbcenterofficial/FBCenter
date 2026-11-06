@@ -78,7 +78,8 @@ var I18N = {
   "language": "Language",
   "close": "Close",
   "premiumThanks": "⭐ Premium — no ads",
-  "aboutGame": "About the game"
+  "aboutGame": "About the game",
+  "lbLogin": "Log in to see the leaderboard"
  },
  "ro": {
   "CongratulationsTitle": "Felicitări!",
@@ -158,7 +159,8 @@ var I18N = {
   "language": "Limbă",
   "close": "Închide",
   "premiumThanks": "⭐ Premium — fără reclame",
-  "aboutGame": "Despre joc"
+  "aboutGame": "Despre joc",
+  "lbLogin": "Loghează-te ca să vezi clasamentul"
  },
  "fr": {
   "CongratulationsTitle": "Félicitations !",
@@ -238,7 +240,8 @@ var I18N = {
   "language": "Langue",
   "close": "Fermer",
   "premiumThanks": "⭐ Premium — sans pub",
-  "aboutGame": "À propos du jeu"
+  "aboutGame": "À propos du jeu",
+  "lbLogin": "Connecte-toi pour voir le classement"
  },
  "es": {
   "CongratulationsTitle": "¡Felicidades!",
@@ -318,7 +321,8 @@ var I18N = {
   "language": "Idioma",
   "close": "Cerrar",
   "premiumThanks": "⭐ Premium — sin anuncios",
-  "aboutGame": "Sobre el juego"
+  "aboutGame": "Sobre el juego",
+  "lbLogin": "Inicia sesión para ver la clasificación"
  },
  "de": {
   "CongratulationsTitle": "Glückwunsch!",
@@ -398,7 +402,8 @@ var I18N = {
   "language": "Sprache",
   "close": "Schließen",
   "premiumThanks": "⭐ Premium — ohne Werbung",
-  "aboutGame": "Über das Spiel"
+  "aboutGame": "Über das Spiel",
+  "lbLogin": "Melde dich an, um die Rangliste zu sehen"
  },
  "it": {
   "CongratulationsTitle": "Congratulazioni!",
@@ -478,7 +483,8 @@ var I18N = {
   "language": "Lingua",
   "close": "Chiudi",
   "premiumThanks": "⭐ Premium — senza pubblicità",
-  "aboutGame": "Info sul gioco"
+  "aboutGame": "Info sul gioco",
+  "lbLogin": "Accedi per vedere la classifica"
  },
  "pt": {
   "CongratulationsTitle": "Parabéns!",
@@ -558,6 +564,7 @@ var I18N = {
   "language": "Idioma",
   "close": "Fechar",
   "premiumThanks": "⭐ Premium — sem anúncios",
-  "aboutGame": "Sobre o jogo"
+  "aboutGame": "Sobre o jogo",
+  "lbLogin": "Entre para ver o ranking"
  }
 };
