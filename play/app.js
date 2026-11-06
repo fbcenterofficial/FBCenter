@@ -555,9 +555,22 @@
     ["home", "diff", "game"].forEach(function (v) { $(v).hidden = v !== id; });
     window.scrollTo(0, 0);
   }
+  // The browser history only ever holds two entries for the game: the home screen and the screen
+  // open now (difficulty or a game). Moving between screens replaces the second one, so the
+  // browser's Back always leads straight home, and from there straight back to the site.
   function go(hash) {
-    if (location.hash.replace("#", "") === hash.replace("#", "")) route();
-    else location.hash = hash;
+    hash = hash.replace("#", "");
+    var cur = location.hash.replace("#", ""), base = location.pathname + location.search;
+    if (hash === cur) { route(); return; }
+    if (hash === "") {
+      if (history.state && history.state.hm) { history.back(); return; } // popstate → route()
+      history.replaceState(null, "", base);
+    } else if (cur === "") {
+      history.pushState({ hm: 1 }, "", base + "#" + hash);
+    } else {
+      history.replaceState(history.state, "", base + "#" + hash);
+    }
+    route();
   }
   function route() {
     clearTimeout(cdTimer);
@@ -568,7 +581,7 @@
     else if (h[0] === "daily") { show("game"); startGame("daily", null); }
     else { G = null; show("home"); renderHome(); }
   }
-  window.addEventListener("hashchange", route);
+  window.addEventListener("popstate", route);
   document.querySelectorAll("[data-back]").forEach(function (b) {
     b.addEventListener("click", function () {
       var h = location.hash.replace("#", "").split("/");
